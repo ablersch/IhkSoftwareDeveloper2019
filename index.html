@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>C# Grundlagen</title>
+
+		<meta name="description" content="Model II - C# Grundlagen IHK Ulm">
+		<meta name="author" content="Andreas Blersch">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<link href="/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+<link rel="stylesheet" href="css/headers.css">
+
+<style>
+	section.left {
+		text-align: left;
+	}
+
+	.reveal {
+		font-size: 30px;
+	}
+
+	.reveal li li {
+		font-size: smaller;
+	}
+
+	.reveal section img {
+		border: none;
+		box-shadow: none;
+	}
+</style>
+	</head>
+	<body>
+			<div id="hidden" style="display:none;">
+					<div id="header">
+						<div id="header-left">Modul II - C# Grundlagen</div>
+						<div id="header-right"><img src="images/IHK-logo.svg" class="logo" /></div>
+						<div id="footer-left">Andreas Blersch</div>
+					</div>
+				</div>
+
+
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Modul II - C# Grundlagen</h1>
+					<h3>Software Developer IHK</h3>
+					<p>
+						<small>Erstellt von Andreas Blersch</small>
+					</p>
+				</section>
+	
+				<section data-markdown="00_Kurs_Organisation.md"   
+					data-separator="^\n\n\n"  
+					data-separator-vertical="^\n\n"  
+					data-separator-notes="^Note:"  
+					data-charset="utf-8">
+				</section>
+
+				<section data-markdown="10_DotNet.md"   
+					data-separator="^\n\n\n"  
+					data-separator-vertical="^\n\n"  
+					data-separator-notes="^Note:"  
+					data-charset="utf-8">
+				</section>
+
+				<section data-markdown="20_CSharp_Grundlagen.md"   
+					data-separator="^\n\n\n"  
+					data-separator-vertical="^\n\n"  
+					data-separator-notes="^Note:"  
+					data-charset="utf-8">
+				</section>
+
+				<section data-markdown="30_Objektorientierung.md"   
+					data-separator="^\n\n\n"  
+					data-separator-vertical="^\n\n"  
+					data-separator-notes="^Note:"  
+					data-charset="utf-8">
+				</section>
+
+				<section data-markdown="40_Auflistungen.md"   
+					data-separator="^\n\n\n"  
+					data-separator-vertical="^\n\n"  
+					data-separator-notes="^Note:"  
+					data-charset="utf-8">
+				</section>
+
+				<section data-markdown="50_Namensraeume.md"   
+					data-separator="^\n\n\n"  
+					data-separator-vertical="^\n\n"  
+					data-separator-notes="^Note:"  
+					data-charset="utf-8">
+				</section>
+
+				<section data-markdown="60_Casting.md"   
+					data-separator="^\n\n\n"  
+					data-separator-vertical="^\n\n"  
+					data-separator-notes="^Note:"  
+					data-charset="utf-8">
+				</section>
+
+				<section data-markdown="70_Fehlerbehandlung.md"   
+					data-separator="^\n\n\n"  
+					data-separator-vertical="^\n\n"  
+					data-separator-notes="^Note:"  
+					data-charset="utf-8">
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				dependencies: [
+				{ src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/headers.js"></script>
+	</body>
+</html>
