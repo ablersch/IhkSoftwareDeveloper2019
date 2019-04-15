@@ -62,7 +62,7 @@ namespace Programmaufbau
     * **string exportFilePath**
 * Großbuchstaben
     * bei Konstanten
-    * **APPLICATIONPATH = \"xxxx\"**
+    * **APPLICATIONPATH = "xxxx"**
 * aussagekräftige Namen verwenden
 * Mehr zum Thema [Namenskonvention](https://docs.microsoft.com/de-de/dotnet/standard/design-guidelines/naming-guidelines)
 
@@ -152,10 +152,11 @@ text = text.Substring(0, text.IndexOf("K")+1);
 text = text.Replace("H", "A");
  ```
 
+Note: weitere Methoden zeigen
+
 
 <!-- .slide: class="left" -->
 ### String Formatierung
-
 
 ```csharp
 // 00001234
@@ -167,6 +168,7 @@ Console.WriteLine(value.ToString("[##-##-##]"));
  ```
 
 Mehr zum Thema [String Formatierung](https://docs.microsoft.com/de-de/dotnet/standard/base-types/formatting-types)
+
 
 <!-- .slide: class="left" -->
 ### String Konvertierung
@@ -187,7 +189,7 @@ zahl = Int32.Parse(text);
 * Prüfen ob Konvertierung möglich ist mit **TryParse**
 
 ```csharp
-//VERWEIS EINFÜGEN Ref Parameter
+//Ref Parameter
 bool result = Int32.TryParse(text, out var zahlVariable);  
 if (!result) {
     Console.WriteLine("Umwandlung fehlgeschlagen");
@@ -269,7 +271,6 @@ Mehr zum Thema [String Verkettung](https://docs.microsoft.com/de-de/dotnet/cshar
 * Mehr zum Thema [Methoden](https://docs.microsoft.com/de-de/dotnet/csharp/methods)
 
 
-
 <!-- .slide: class="left" -->
 ## Syntax der Methodendefinition
 
@@ -333,7 +334,7 @@ wird dabei nicht verändert.
 
 Damit der ursprüngliche Wert ebenfalls
 geändert werden kann, kann der Wert als Verweis (Reference) übergeben
-werden. Dazu wird das Schlüsselwort [ref]https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/ref verwendet.
+werden. Dazu wird das Schlüsselwort [ref](https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/ref) verwendet.
 
 ```csharp
 int zahl = 2;
@@ -375,6 +376,8 @@ bool Addiere(int zahl1, int zahl2, out int result) {
 # Operatoren
 
 Mehr zum Thema [Operatoren](https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/operators/)
+
+Note: zB Postfix Operator zeigen
 
 
 <!-- .slide: class="left" -->

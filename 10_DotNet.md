@@ -16,6 +16,8 @@ Was ist .NET
 
 * Für die Entwicklung von .NET Anwendungen wird von Microsoft Visual Studio empfohlen.
 
+Note: test  aa
+
 
 <!-- .slide: class="left" -->
 ## .NET Core

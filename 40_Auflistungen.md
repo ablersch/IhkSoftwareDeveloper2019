@@ -16,8 +16,9 @@ Nachteile:
 * Index bleibt vorhanden wenn ein Element gelöscht wird
 
 Dafür gibt es neue Klassen sogenannte **Collections**. Diese können ihre
-Kapazität dynamisch verwalten und enthalten keine leeren Indizes. Damit
-diese verwendet werden können, müssen folgende Namespaces in das Projekt
+Kapazität dynamisch verwalten und enthalten keine leeren Indizes.
+
+Damit diese verwendet werden können, müssen folgende Namespaces in das Projekt
 eingebunden werden:
 
 
@@ -36,7 +37,6 @@ Mehr zum Thema [Collections](https://docs.microsoft.com/de-de/dotnet/csharp/prog
 
 Eine häufig verwendete Klasse für Aufzählungen ist die Klasse [ArrayList](https://docs.microsoft.com/de-de/dotnet/api/system.collections.arraylist?view=netframework-4.7.2).
 
-Die folgende Tabelle zeigt einige Methoden und Eigenschaften der Klasse:
 Damit diese verwendet werden kann, muss der folgende Namespace in das
 Projekt eingebunden werden:
 

@@ -16,13 +16,13 @@ Klassen und Methoden können in sogenannten Namensräumen (engl. Namespaces) hie
 * Namensräume können eingebunden werden: <br/>
 &rarr; Zugriff auf Klassen wird einfacher und kürzer (keine Qualifizierung der Elemente).
 
-* Namenskollision in globalen Namensräumen vermeiden (Dürfen zwei Klassen den gleichen Namen in verschiedenen Namensräumen verwenden. Zugriff aber dann mit voll qualifiziertem Name)
+* Namenskollision in globalen Namensräumen vermeiden (z.B. Dürfen zwei Klassen den gleichen Namen in verschiedenen Namensräumen verwenden. Zugriff aber dann mit voll qualifiziertem Name)
 
 
 <!-- .slide: class="left" -->
 ## Eigenen Namensraum einrichten
 
-* Es ist üblich, die Namespace Struktur anhand der Projektstruktur zu gliedern **Firma.ProjektName.UnterProjekt**.
+* Es ist üblich, die Namespace Struktur anhand der Projektstruktur zu gliedern z.B. **Firma.ProjektName.UnterProjekt**.
 
 * Man fasst in der Regel funktional verwandet Klassen in einem Namensraum zusammen.
 

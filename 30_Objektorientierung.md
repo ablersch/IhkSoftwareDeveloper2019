@@ -7,9 +7,9 @@ Klassen, Objekte und Instanzen
 
 **Definition Objektorientierung**: Eine Sichtweise auf ein System, das durch das Zusammenspiel kooperierender Objekte beschrieben wird.
 
-* Zusammengehörende Teile werden beim Programmieren zusammen verwaltet.
+* Zusammengehörende Teile werden beim programmieren zusammen verwaltet.
 * Um zur Lösung eines Problems zu kommen, versucht man einzelne Objekte (Klassen) in der Problemstellung zu erkennen.
-* Die Objekte werden dann mit den zugehörigen Daten und Methoden, die sie beschreiben, nachgebildet.
+* Die Objekte werden mit den zugehörigen Daten und Methoden, die sie beschreiben, nachgebildet.
 
 
 <!-- .slide: class="left" -->
@@ -27,6 +27,8 @@ Klassen, Objekte und Instanzen
 ## Objektorientierung
 
 ![Objektorientierung](Images/ObjektorientierteProgrammierung.jpg)
+
+Mehr zum Thema [objektorientierte Programmierung](https://entwickler.de/online/development/einfuehrung-programmierung-objektorientierte-programmentwicklung-197372.html)
 
 
 <!-- .slide: class="left" -->
@@ -58,6 +60,8 @@ Klassen, Objekte und Instanzen
 * Eine Klasse kann Attribute, Konstante und Methoden enthalten.
 
 * Auch den Klassenmember können Modifizierer vorangestellt werden. Ohne Angabe werden die Elemente als **private** deklariert.
+
+* Mehr zum Thema [Klassen](https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/classes-and-structs/classes)
 
 
 <!-- .slide: class="left" -->
@@ -192,8 +196,7 @@ public static int classCount;
 ```csharp
 Person meinObjekt = new Person();
 int c = meinObjekt.count;
--------------------------------------
-int c = Person.classCount;
+int cClass = Person.classCount;
 ```
 
 
@@ -260,7 +263,7 @@ programmiert werden.
 <!-- .slide: class="left" -->
 ## Konstruktor
 
-* Konstruktor ist eine spezielle Methode einer Klasse (kann aber nicht manuell aufgerufen werden)
+* Der Konstruktor ist eine spezielle Methode einer Klasse (kann aber nicht manuell aufgerufen werden)
 
 * Der Konstruktor wird **automatisch beim Instanziieren** (Erzeugen) eines Objekts aufgerufen.
 
@@ -277,8 +280,10 @@ programmiert werden.
 
 * Der Konstruktor ist außerhalb der Klasse aufrufbar; deshalb **muss** er als **public** definiert werden.
 
-* Auch Konstruktoren können überladen werden, es können verschiedene Parameterlisten mitgegeben werden.\
+* Auch Konstruktoren können überladen werden, es können verschiedene Parameterlisten mitgegeben werden.<br/>
 --> Bei der Erzeugung eines Objekts **müssen die Parameter mit übergeben werden**.
+
+* Mehr zum Thema [Konstruktoren](https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/classes-and-structs/constructors)
 
 
 <!-- .slide: class="left" -->
@@ -306,14 +311,14 @@ public Person()
 
 
 <!-- .slide: class="left" -->
-### Beispiel
+### Beispiel Konstruktor
 
 ```csharp
     class Person
     {
       private string name;
       private string vorname;
-      
+
       public Person()  //Standardkonstruktor
       {
         name = "unbekannt";
@@ -330,7 +335,7 @@ public Person()
 
 
 <!-- .slide: class="left" -->
-### Beispiel 2
+### Beispiel
 
 ```csharp
 namespace BeispielKonstruktor
@@ -370,7 +375,7 @@ namespace BeispielKonstruktor
 
 
 <!-- .slide: class="left" -->
-## Destruktor
+## Destruktor (Finalizer)
 
 * Der Destruktor einer Klasse wird beim **Zerstören** eines Objekts aufgerufen.
 
@@ -384,9 +389,11 @@ namespace BeispielKonstruktor
 
 * Er kann nicht direkt aufgerufen werden.
 
+* Mehr zum Thema [Destruktor](https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/classes-and-structs/destructors)
+
 
 <!-- .slide: class="left" -->
-### Beispiel
+### Syntax
 
 ```csharp
 
@@ -404,25 +411,31 @@ class Person
 
 <!-- .slide: class="left" -->
 # Vererbung
+## Problemstellung
 
-Problemstellung Oft werden mehrere Klassen benötigt, die in weiten
-Teilen gleiche Funktionalitäten bereitstellen.\
+Oft werden mehrere Klassen benötigt, die in weiten
+Teilen gleiche Funktionalitäten bereitstellen.
+
 Zum Beispiel bei den Klassen **Mensch** und **Tier**.
 
 * viel Schreibarbeit
 
 * bei Änderungen müssen alle Klassen angepasst werden
 
-**Lösung:** Man versucht, zu ähnlichen Klassen, eine gemeinsame
+**Lösung:**
+
+Man versucht, zu ähnlichen Klassen, eine gemeinsame
 **Oberklasse** zu finden die alle Gemeinsamkeiten beinhaltet. In den
-**Unterklassen** werden dann lediglich die Unterschiede ergänzt.
+**Unterklassen** werden lediglich die Unterschiede ergänzt.
 
 
 <!-- .slide: class="left" -->
+## Vererbung
 ![Vererbung](Images/Vererbung3.png)
 
 
 <!-- .slide: class="left" -->
+## Vererbung
 Die Vererbung (Ableitung) erlaubt die Definition neuer Klassen auf der
 Basis von bestehenden Klassen. Dabei werden Eigenschaften und Methoden
 übernommen.
@@ -432,26 +445,25 @@ Die Klasse deren Member vererbt werden, wird
 diese Member erbt, wird **abgeleitete Klasse/Kindklasse/Unterklasse**
 genannt.
 
-
 **Beispiel:** Eine Basisklasse **Lebewesen** kann eine abgeleitete
 Klasse **Tier** und eine weitere abgeleitete Klasse **Reptil** haben.
 Also ein Reptil ist ein Tier und ein Tier ist ein Lebewesen.
 
 
 <!-- .slide: class="left" -->
-Beispiel
+## Beispiel
 
 ![Vererbung](Images/Vererbung2.png)
 
 
 <!-- .slide: class="left" -->
-Beispiel
+## Beispiel
 
 ![Vererbung](Images/Vererbung.png)
 
 
 <!-- .slide: class="left" -->
-Die Notation der Vererbung in C\#
+## Syntax
 
 ```csharp
 class <abgeleitete Klasse> : <Basisklasse>
@@ -475,7 +487,7 @@ class Mensch : Lebewesen
 
 * Es werden keine Konstruktoren vererbt!
 
-* Von der Kindklasse wird der parameterlose Konstruktor der Basisklasse aufgerufen wenn kein andere Konstruktor definiert wurde.
+* Von der Kindklasse wird der parameterlose Konstruktor der Basisklasse aufgerufen wenn kein anderer Konstruktor definiert wurde.
 
 * Besitzt die Basisklasse einen Konstruktor mit Parameter (und keinen ohne Parameter) wird dieser nicht aufgerufen. In diesem Fall muss (wenn ein Konstruktor nötig ist) der Konstruktor aus der abgeleiteten Klasse explizit aufgerufen werden.
 

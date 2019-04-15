@@ -26,16 +26,17 @@ zahl = (int)d;    -> Ergebnis: 1234
 ```csharp
 Person person;
 Object myObject = new Person();
-if (myObject is Person)
+if (myObject is Person) // Prüft ob myObject mit Person kompatibel ist
 {
-    person = (Person)myObject; -> ((Person)myObject).GetName();
+    person = (Person)myObject; // Alternativ:  ((Person)myObject).GetName();
     person.GetName();
 }
 
--------------------------------------
+```
 
-person = myObject as Person;
-if (person != null)
+```csharp
+person = myObject as Person; // Führt eine Konvertierung aus
+if (person != null) // Erfolgreich wenn person nicht null ist
 {
     person.GetName();
 }

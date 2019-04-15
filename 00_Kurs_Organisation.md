@@ -14,14 +14,26 @@ Ablauf, Termine, Prüfungen, etc.
 ## Kurs Organisation
 
 * [Modul Material (Skript und Übungen)](https://github.com/ablersch/SoftwareDeveloperIHK) von GitHub
-* [Stundenplan](LINK)
+* [Stundenplan](Stundenplan_SoftwareDeveloper.pdf)
 
 
 <!-- .slide: class="left" -->
 ## Ablauf
 
-Pausen
-* Morgens mittags ....
+Freitags:
+
+* Von bis
+* Pause:
+
+    * xx
+
+Samstags:
+
+* von bis
+* Pausen:
+
+    * xx
+    * xx
 
 
 <!-- .slide: class="left" -->
