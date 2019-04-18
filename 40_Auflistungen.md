@@ -31,6 +31,8 @@ eingebunden werden:
 
 Mehr zum Thema [Collections](https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/concepts/collections)
 
+Note: **VS** autom Auflösung zeigen
+
 
 <!-- .slide: class="left" -->
 ## ArrayList
@@ -80,6 +82,8 @@ der Elemente in der Liste.
 * Kein Einfluss auf den Index
 
 * Zugriff erfolgt über einen Schlüssel
+
+Note: Hashcode: Int Wert welcherüber Algorithmus berechnet wird
 
 
 <!-- .slide: class="left" -->
@@ -152,7 +156,7 @@ foreach (int i in liste) {
 
 
 <!-- .slide: class="left" -->
-## Dictionary `<TKey, TValue>` 
+## Dictionary `<TKey, TValue>`
 
 * Das [Dictionary](https://docs.microsoft.com/de-de/dotnet/api/system.collections.generic.dictionary-2?view=netframework-4.7.2) Stellt eine Auflistung von Schlüsseln und Werten dar
 
@@ -188,3 +192,7 @@ foreach (KeyValuePair<string, string> pair in dictionary) {
      Console.WriteLine("Key: " + pair.Key + " Wert: " + pair.Value);
 }
 ```
+
+Note: Gibt noch weitere wie z.B. HashSet, Queue, SortedList, Stack, ..
+
+**VS** Collections

@@ -9,6 +9,8 @@ ALT+ links Klick - Zoom
 
 Ablauf, Termine, Prüfungen, etc.
 
+Note: Persönliche Vorstellung von den Teilnehmern und mir mit Vorkenntnisse
+
 
 <!-- .slide: class="left" -->
 ## Kurs Organisation
@@ -22,18 +24,18 @@ Ablauf, Termine, Prüfungen, etc.
 
 Freitags:
 
-* Von bis
+* Von 18:00 - 21:00 Uhr
 * Pause:
 
-    * xx
+    * 19:30 - 19:45 Uhr
 
 Samstags:
 
-* von bis
+* von 8:00 - 15:00 Uhr
 * Pausen:
 
-    * xx
-    * xx
+    * 10:00 - 10:15 Uhr
+    * 11:30 - 12:00 Uhr
 
 
 <!-- .slide: class="left" -->

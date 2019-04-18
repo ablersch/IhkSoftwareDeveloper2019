@@ -21,14 +21,14 @@ Grundlagen, Programmaufbau, Codekonventionen, Kommentare, Strings, Methoden, Ope
 ## Programmaufbau
 
 ```csharp
-using System;
+using System; // Assemblies einbinden
 using System.Linq;
 
-namespace Programmaufbau
+namespace Programmaufbau //Projektteile werden in Namensräumen zusammengefasst
 {
-    class Program
+    class Program // Bauplan für Abbildung von realen Objekten
     {
-        static void Main(string[] args)
+        static void Main(string[] args) // Einstiegspunkt mit Parameter Array
         {
             string text = "IHK";
             text += " Software Developer";
@@ -48,6 +48,10 @@ namespace Programmaufbau
     }
 }
 ```
+
+Note: Static kann ausgeführt werden ohne Instanz einer Klasse. Daraus können selbst nur statische Methoden aufgerufen werden.
+
+Zeigen in **VS**
 
 
 <!-- .slide: class="left" -->
@@ -92,6 +96,14 @@ namespace Programmaufbau
 /// <param name="args">Parameter beschreiben</param>
 /// <returns>Return Wert beschreiben</returns>
 ```
+
+Note: In VS zeigen
+
+* VS Layout umstellen
+* Projekt anlegen
+* Methoden autom erstellen
+* Codevervollständigung
+* Intelli Sense
 
 
 <!-- .slide: class="left" -->
@@ -143,7 +155,7 @@ text += i;
 * Teilstring von Index 0 bis Index 2
 
 ```csharp
-text = text.Substring(0, text.IndexOf("K")+1);
+text = text.Substring(0, text.IndexOf("K") +1); // Array Index beginnt bei 0
 ```
 
 * Teile eines Strings ersetzen
@@ -152,7 +164,7 @@ text = text.Substring(0, text.IndexOf("K")+1);
 text = text.Replace("H", "A");
  ```
 
-Note: weitere Methoden zeigen
+Note: weitere Methoden zeigen in **VS**. z.B. IsNullOrEmpty, Trim, Remove, ...
 
 
 <!-- .slide: class="left" -->
@@ -196,14 +208,16 @@ if (!result) {
 }
 ```
 
-* Konvertierung von **double**
+* Konvertierung von **double** nach int
 
 ```csharp
 double zahl = 12.66789;
-int intZahl = Convert.ToInt32(zahl);
+int intZahl = Convert.ToInt32(zahl);  // gerundet 13
 ```
 
 Mehr zum Thema [String Konvertierung](https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number)
+
+Note: Bei Convert und Parse Fehler abfangen
 
 
 <!-- .slide: class="left" -->
@@ -223,6 +237,8 @@ Es gibt mehrere Möglichkeiten, um eine bestimmte Ausgabe zu erzeugen.
 
 **Beispiel:** Es soll die Ausgabe *"Die Summe von 1500 plus 500 ist
 2000"* erzeugt werden.
+
+Note: cw (if, for, ...) + tab + Tab in **VS**
 
 
 <!-- .slide: class="left" -->
@@ -244,7 +260,8 @@ Console.WriteLine($"Die Summe von {a} plus {b} ist {sum}");
 * Einsatz von Platzhaltern (erweiterte Formatierung)
 
 ```csharp
-Console.WriteLine("Die Summe von {0:F1} plus {1:F2} ist {2:F3}", a, b, sum);
+// Festkomma ,0 ,00 ,000
+Console.WriteLine("Die Summe von {0:F1} plus {1:F2} ist {2:F3}", a, b, sum); 
 ```
 
 * Einsatz von Platzhaltern (erweiterte Formatierung)
@@ -254,6 +271,12 @@ Console.WriteLine("Die Summe von {a,-20:D} plus {b,-20:D} ist {sum,-20:D}");
 ```
 
 Mehr zum Thema [String Verkettung](https://docs.microsoft.com/de-de/dotnet/csharp/how-to/concatenate-multiple-strings)
+
+Note: Platzhalter können mehrfach verwendet werden.
+
+{0,-20:D}  rechts der Zahl 20 Stellen frei
+
+**ÜBUNG** Array
 
 
 <!-- .slide: class="left" -->
@@ -269,6 +292,8 @@ Mehr zum Thema [String Verkettung](https://docs.microsoft.com/de-de/dotnet/cshar
 * beliebiger Reihenfolge deklariert werden können.
 * Mit Methoden wird eine Aktion ausgeführt, Daten verändert oder ausgegeben.
 * Mehr zum Thema [Methoden](https://docs.microsoft.com/de-de/dotnet/csharp/methods)
+
+Note: In C# wird nur von Methoden gesprochen. Keine Unterscheidung wie in C von Funktion (mit Rückgabewert) oder Prozedur (void)
 
 
 <!-- .slide: class="left" -->
@@ -328,12 +353,12 @@ Es gibt zwei Möglichkeiten um Parameter an eine Methode zu übergeben:
 * Parameterübergabe als Wert (**call by value**)
 * Parameterübergabe als Verweis (**call by reference**)
 
-Normalerweise wird **call by value** verwendet. Der Wert wird als Kopie
-übergeben und kann bearbeitet werden. Der ursprünglich übergebene Wert
+Normalerweise wird **call by value** verwendet. Der Wert wird als **Kopie
+übergeben** und kann bearbeitet werden. Der ursprünglich übergebene Wert
 wird dabei nicht verändert.
 
 Damit der ursprüngliche Wert ebenfalls
-geändert werden kann, kann der Wert als Verweis (Reference) übergeben
+geändert werden kann, kann der Wert als **Verweis** (Reference) übergeben
 werden. Dazu wird das Schlüsselwort [ref](https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/ref) verwendet.
 
 ```csharp
@@ -371,13 +396,15 @@ bool Addiere(int zahl1, int zahl2, out int result) {
 }
 ```
 
+Note: **VS** Sichtbarkeit und Methoden
+
 
 <!-- .slide: class="left" -->
 # Operatoren
 
 Mehr zum Thema [Operatoren](https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/operators/)
 
-Note: zB Postfix Operator zeigen
+Note: z.B. Postfix Operator zeigen
 
 
 <!-- .slide: class="left" -->
@@ -411,10 +438,12 @@ class Program
         {
             Console.WriteLine("True");
         }
-        Console.WriteLine($"Der Status Code ist {eStatus} mit dem Wert {eStatus.GetHashCode()}");
+        Console.WriteLine($"Der Status Code ist {eStatus} mit dem Wert {eStatus.GetHashCode()}"); // oder (int)eStatus)
          }
      }
 ```
+
+Note: **VS** Enum
 
 
 <!-- .slide: class="left" -->
@@ -449,6 +478,8 @@ string text = (testValue == 0) ? "erfüllt" : "nicht erfüllt";
 
 Mehr zum Thema [IF-ELSE](https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/if-else)
 
+Note: if(else) + tab + tab
+
 
 <!-- .slide: class="left" -->
 ## SWITCH-CASE - Anweisung
@@ -472,6 +503,8 @@ switch (caseSwitch)
         break;
 }
 ```
+
+Note: switch + tab + tab
 
 
 <!-- .slide: class="left" -->
@@ -508,6 +541,8 @@ for( int i=0; i < 10; i++ )
 ```
 
 Mehr zum Thema [For-Schleifen](https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/for)
+
+Note: for (aufsteigender Counter) fore (absteigender Counter) + tab + tab
 
 
 <!-- .slide: class="left" -->
@@ -553,6 +588,12 @@ foreach (double meinWert in meinArray)
 **Achtung:** Der foreach-Bezeichner "meinWert" ist schreibgeschützt. Er
 kann also nicht zur Zuweisung von Arraywerten verwendet werden!
 
+Note: Sinnvoll wenn alle Werte durchlaufen werden sollen aber kein Index benötigt wird.
+
+GetEnumerator() Index abgerufen und bearbeitet werden
+
+foreach + tab + tab
+
 
 <!-- .slide: class="left" -->
 # Sprunganweisungen
@@ -577,3 +618,5 @@ for (int i = 0; i < 10; i++) {
 ```
 
 Mehr zum Thema [Sprunganweisungen](https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/jump-statements)
+
+Note: ÜBUNG Fakultät und Palindrom (wdh von C)

@@ -16,7 +16,7 @@ Was ist .NET
 
 * Für die Entwicklung von .NET Anwendungen wird von Microsoft Visual Studio empfohlen.
 
-Note: test  aa
+Note: Plattformunabhängig = Unterschied in Architektur, Prozessor und OS. Wird durch die Laufzeitumgebung (CLR) gewährleistet.
 
 
 <!-- .slide: class="left" -->
@@ -48,6 +48,10 @@ Note: test  aa
 ## Ablauf der Entwicklung eines .NET Programms
 
 ![DotNet Compiler CIL zu nativem Code](Images/DotNetCILCompiler.png)
+
+Note: CLI (systemunabhängig) = Programmbefehle als Bytefolge
+
+Just in Time: Auf Zielsystem zur Laufzeit. Übersetzt Bytecode in Maschinensprache (Maschinencode) des jeweiligen Prozessors.
 
 
 <!-- .slide: class="left" -->
@@ -94,8 +98,14 @@ CIL
 
 * Die Definition einer Assemblierung kann in einer einzigen Datei enthalten oder über mehrere Dateien verteilt sein.
 
+Note: Solution -> Eigenschaften -> Assemblyinformationen
+
 
 <!-- .slide: class="left" -->
 ## Assemblierung
 
 ![Single File Assembly](Images/SingleFileAssembly.png)
+
+Note: Mögliche Komponenten einer Assembly
+
+Auch Multi FIle Assembly möglich

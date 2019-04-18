@@ -57,7 +57,7 @@ Mehr zum Thema [objektorientierte Programmierung](https://entwickler.de/online/d
 
 * In der geschweiften Klammer folgt die Definition der Member.
 
-* Eine Klasse kann Attribute, Konstante und Methoden enthalten.
+* Eine Klasse kann Variablen, Konstante und Methoden enthalten.
 
 * Auch den Klassenmember können Modifizierer vorangestellt werden. Ohne Angabe werden die Elemente als **private** deklariert.
 
@@ -67,7 +67,7 @@ Mehr zum Thema [objektorientierte Programmierung](https://entwickler.de/online/d
 <!-- .slide: class="left" -->
 ## Zugriffsmodifizierer
 
-Die Zugriffsmodifizierer steuern die Sichtbarkeit der Eigenschaften und
+Die Zugriffsmodifizierer steuern die Sichtbarkeit der Variablen, Eigenschaften und
 Methoden einer Klasse in C\#. Sie heißen:
 
 **private:**
@@ -91,7 +91,7 @@ Methoden einer Klasse in C\#. Sie heißen:
 ## Unsere erste Klasse
 
 ```csharp
-public class Person
+public class Person // Variablen und Methoden
 {
     private string vorname;
     private string nachname;
@@ -130,11 +130,13 @@ Punktoperator.
 meinePerson.alter = 20;
 ```
 
+Note: **VS** Klasse erzeugen und nutzen
+
 
 <!-- .slide: class="left" -->
 ## Was ist Kapselung
 
-* Die Attribute (Variablen) werden in einer Klasse eingeschlossen und nach außen abgeschirmt.
+* Die Attribute (Variablen) werden in einer Klasse eingeschlossen und nach außen abgeschirmt (mit Zugriffsmodifizierer).
 
 * Nur Methoden und Eigenschaften (Properties) einer Klasse haben darauf Zugriff.
 
@@ -147,6 +149,12 @@ meinePerson.alter = 20;
 ## Darstellung Kapselung
 
 ![Klassenkapselung](Images/Klassenkapselung.png)
+
+Note: Variabeln sind nur intern nutzbar wenn diese private sind
+
+Methoden sind meiste nach außen sichtbar und greifen auf die geschützten Variablen zu.
+
+ÜBUNG Medienverwaltung 1
 
 
 <!-- .slide: class="left" -->
@@ -162,16 +170,28 @@ public class Person
     private string nachname;
     private int alter;
 
-    public int Alter
+    public int Alter // Eigenschaft (Property)
     {
         get {return alter;}
-        set {alter = value;}
+        set {alter = value;} // value beinhaltet den uebergebenen Wert
     }
+
+    // Alternative expression-bodied members
+    //public int Alter
+    //{
+    //    get => alter;
+    //    set => alter = value;
+    //}
 }
 ```
 
+Note: **VS** Eigenschaft zeigen mit automa. Generierung
 
-<!-- .slide: class="left" -->
+Zuweisung von Wert wie bei einer Variable (nicht a.SetName("aa"))
+
+In einer Eigenschaft sind getter und setter inkludiert.
+
+<!-- .slide: class="left" 
 ## Klassen- & Instanzvariablen
 
 Je nach Gültigkeit unterscheidet man in Instanz- und Klassenvariablen.\
@@ -198,6 +218,7 @@ Person meinObjekt = new Person();
 int c = meinObjekt.count;
 int cClass = Person.classCount;
 ```
+-->
 
 
 <!-- .slide: class="left" -->
@@ -208,6 +229,10 @@ int cClass = Person.classCount;
 * Diese Referenzvariable **this** kann in allen Methoden des Objekts eingesetzt werden.
 
 * Sie kennzeichnet das aktuelle Objekt.
+
+Note: Sich selbst als Parameter übergeben.
+
+Identifizieren von Variablen mit gleichem Namen
 
 
 <!-- .slide: class="left" -->
@@ -267,7 +292,7 @@ programmiert werden.
 
 * Der Konstruktor wird **automatisch beim Instanziieren** (Erzeugen) eines Objekts aufgerufen.
 
-* Wird innerhalb der Klasse vom Programmierer **kein Konstruktor formuliert**, so wird automatisch der **Standard-Konstruktor** aufgerufen.
+* Wird innerhalb der Klasse vom Programmierer **kein Konstruktor formuliert**, so wird automatisch der **Standard-Konstruktor** (ohne Parameter) aufgerufen.
 
 
 <!-- .slide: class="left" -->
@@ -285,14 +310,19 @@ programmiert werden.
 
 * Mehr zum Thema [Konstruktoren](https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/classes-and-structs/constructors)
 
+Note: private Konstruktor wenn die Klasse nicht initialisiert werden soll
+
 
 <!-- .slide: class="left" -->
+### Syntax
+
 **Standard-Konstruktor welcher automatisch aufgerufen wird:**
 
 ```csharp
 class Person
 {
-    public Person() //Standard-Konstruktor
+    //Standard-Konstruktor. Gleicher Name wie die Klasse und kein Rückgabewert
+    public Person()
     {
     }
 }
@@ -333,6 +363,8 @@ public Person()
     }
 ```
 
+Note: Werden Konstruktoren definiert gibt es kein Default Konstruktor mehr
+
 
 <!-- .slide: class="left" -->
 ### Beispiel
@@ -344,7 +376,7 @@ namespace BeispielKonstruktor
     {
         private int aktuelleGeschwindigkeit;
 
-        public int Geschwindigkeit
+        public int Geschwindigkeit // Property
         {
             get { return this.aktuelleGeschwindigkeit; }
             set { this.aktuelleGeschwindigkeit = value; }
@@ -355,7 +387,7 @@ namespace BeispielKonstruktor
             Geschwindigkeit = wert;
         }
 
-        public Fahrzeug() :this(50)
+        public Fahrzeug() : this(50) //Verweis auf Konstruktor mit einem Paramter
         {
         }
     }
@@ -372,6 +404,12 @@ namespace BeispielKonstruktor
     }
 }
 ```
+
+Note: Anderer überladener Konstruktor wird zuerst mit this aufgerufen. Danach wird der restliche Code durchlaufen.
+
+Initialisierungscode sollte in nur einem Konstrukt sein der von anderen aufgerufen wird.
+
+**VS** Konstruktor
 
 
 <!-- .slide: class="left" -->
@@ -403,18 +441,18 @@ class Person
     // Destruktor
     ~Person()
     {
-        ...
-    } 
+    }
 }
 ```
+
+Note: ÜBUNG Intervall und Sekundenspeicher
 
 
 <!-- .slide: class="left" -->
 # Vererbung
 ## Problemstellung
 
-Oft werden mehrere Klassen benötigt, die in weiten
-Teilen gleiche Funktionalitäten bereitstellen.
+Oft werden mehrere Klassen benötigt, die in weiten Teilen gleiche Funktionalitäten bereitstellen und gleiche Eigenschaften haben.
 
 Zum Beispiel bei den Klassen **Mensch** und **Tier**.
 
@@ -449,17 +487,37 @@ genannt.
 Klasse **Tier** und eine weitere abgeleitete Klasse **Reptil** haben.
 Also ein Reptil ist ein Tier und ein Tier ist ein Lebewesen.
 
+Note: Autohaus
+
+Auto        LKW
+
+Audi    BMW
+
+A1  A3  A4
+
 
 <!-- .slide: class="left" -->
 ## Beispiel
 
 ![Vererbung](Images/Vererbung2.png)
 
+Note: **Ist ein** oder **ist eine Art von**
+
+Assoziation = Beziehung keine Vererbung
+
+ÜBUNG Klassendiagramm
+
 
 <!-- .slide: class="left" -->
 ## Beispiel
 
 ![Vererbung](Images/Vererbung.png)
+
+Note: Konstruktor und private Elemente werden nicht vererbt.
+
+ChangeRequest kann alle Methoden und Variabeln von der Basisklasse verwenden
+
+**VS** zeigen in Vererbung
 
 
 <!-- .slide: class="left" -->
@@ -480,6 +538,17 @@ class Mensch : Lebewesen
     ...
 }
 ```
+Note: IN **VS** zeigen:
+
+* Reihenfolge von Konstruktoraufrufe
+* readonly Schlüsselwort
+* protected
+* region --> wenn Gliederung in VS aktiv ist
+* Klasse erstellen mit zwei Methoden
+* Aufruf der Methoden
+* Aufruf Konstruktor
+
+ÜBUNG Medienverwaltung 2
 
 
 <!-- .slide: class="left" -->
@@ -524,10 +593,16 @@ base.Name = "Fritz";
 
 * **virtual:** Wird ein Klassenmember in der Basisklasse mit virtual deklariert kann er später von einer abgeleiteten Klasse überschrieben werden.
 
-* **override:** Überschreibt einen Klassenmember der als virtual deklariert wurde (erweitert die Basisklasse). Die zuletzt überschriebene Methode wird immer benutzt!
+* **override:** Überschreibt einen Klassenmember der als virtual deklariert wurde (erweitert bzw ändert Funktion der Basisklasse). Die zuletzt überschriebene Methode wird immer benutzt!
 
-* **new Modifizierer:** Überdeckt Methoden der Basisklasse. Wird, je nachdem welcher Datentyp das Objekt besitzt, aufgerufen oder nicht.
+* **new Modifizierer:** Überdeckt (versteckt) Methoden der Basisklasse. Wird, je nachdem welcher Datentyp das Objekt besitzt, aufgerufen oder nicht.
 
-* **sealed:** Eine als sealed deklarierte Klasse erlaubt keine Ableitung.
+* **sealed:** Eine als sealed deklarierte Klasse erlaubt keine Ableitung. z.B. verhindert in einer API.
 
-* **abstract:** Damit kann angegeben werden dass die Klasse nur als Basisklasse verwendet werden kann (es darf keine Instanz erstellt werden). Klassen die von einer abstrakten Klasse erben müssen alle Klassenmember die abstract sind implementieren.
+* **abstract:** Damit kann angegeben werden dass die Klasse nur als Basisklasse verwendet werden kann (es darf keine Instanz erstellt werden). Klassen die von einer abstrakten Klasse erben müssen alle Klassenmember die abstract sind implementieren. Haben keine Implementierung von Code sondern nur die Definition!
+
+Note: **VS** Vererbung virtual
+
+New Modifizierer: Zeigt an das der Member neu deklariert und in der Basisklasse verborgen wird.
+
+ÜBUNG Versandhandel. Davor wdh von Klassen + Vererbung + Properties

@@ -18,6 +18,10 @@ Klassen und Methoden können in sogenannten Namensräumen (engl. Namespaces) hie
 
 * Namenskollision in globalen Namensräumen vermeiden (z.B. Dürfen zwei Klassen den gleichen Namen in verschiedenen Namensräumen verwenden. Zugriff aber dann mit voll qualifiziertem Name)
 
+Note: Wie eine Art Ordnerstruktur damit passenden Methoden gefunden werden können.
+
+Kategorisieren
+
 
 <!-- .slide: class="left" -->
 ## Eigenen Namensraum einrichten
@@ -73,3 +77,5 @@ meinNamespace.MeineKlasse.MeineFunktion();
 // mit using
 MeineKlasse.MeineFunktion();
 ```
+
+Note: ÜBUNG Wetterstation
