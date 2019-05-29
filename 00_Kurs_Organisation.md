@@ -15,7 +15,7 @@ Note: Persönliche Vorstellung von den Teilnehmern und mir mit Vorkenntnisse
 <!-- .slide: class="left" -->
 ## Kurs Organisation
 
-* [Modul Material (Skript und Übungen)](https://github.com/ablersch/SoftwareDeveloperIHK) von GitHub
+* [Modul Material (Skript und Übungen)](https://github.com/ablersch/software-developer-ihk-modul-2) von GitHub
 * [Stundenplan](Stundenplan_SoftwareDeveloper.pdf)
 
 
