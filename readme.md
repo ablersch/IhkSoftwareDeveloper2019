@@ -4,8 +4,8 @@ Diese Repository beinhaltet die Unterlagen für den Kurs **Software Developer IH
 
 ## Material
 
-* [Im Browser](https://ablersch.github.io/SoftwareDeveloperIHK)
-* [Druckversion](https://ablersch.github.io/SoftwareDeveloperIHK?print-pdf)
+* [Im Browser](https://ablersch.github.io/software-developer-ihk-modul-2)
+* [Druckversion](https://ablersch.github.io/software-developer-ihk-modul-2?print-pdf)
 
 ## Erstellen und ausführen
 
