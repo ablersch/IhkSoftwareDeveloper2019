@@ -19,6 +19,7 @@ Das .Net Framework stellt im `System.IO` Namespace viele Klassen für Dateiopera
 * Die Klassen [Directory (static)](https://docs.microsoft.com/de-de/dotnet/api/system.io.directory?view=netframework-4.7.2) und [DirectoryInfo](https://docs.microsoft.com/de-de/dotnet/api/system.io.directoryinfo?view=netframework-4.7.2) stellen Methoden bereit um mit Ordner zu arbeiten.
   * Dateien eines Ordner lesen
   * Prüfung ob Ordner existiert
+  * Order erstellen
 
 
 <!-- .slide: class="left" -->
@@ -53,6 +54,12 @@ while ((line = streamReader.ReadLine()) != null) {
 streamReader.Dispose();
 ```
 
+Note: **VS** Dateioperationen
+
+Filestream vs StreamWriter: StreamWriter (TextWriter) ist ein Stream Decoder um Text zu schreiben.
+
+FileStream konvertiert Textdateien in byte[]
+
 
 <!-- .slide: class="left" -->
 ## Dispose() Methode
@@ -70,6 +77,8 @@ streamReader.Dispose();
   * Um eine SQL Verbindung zu schließen ist Close() besser geeignet da diese danach wieder geöffnet werden kann (das Objekt bleibt bestehen).
 
   * Bei Dispose() wird das Objekt zurückgesetzt d.h. ein weiteres Öffnen der Verbindung ist nicht möglich.
+
+Note: Möglichkeit Ressourcen frei zu geben
 
 
 <!-- .slide: class="left" -->
@@ -136,3 +145,7 @@ try {
   }
 } catch (Exception e) {}
 ```
+
+Note: ÜBUNG Logger und Dateien einlesen
+
+Test mit der DLL vom Nebensitzer oder von mir

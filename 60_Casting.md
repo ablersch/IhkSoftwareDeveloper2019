@@ -19,6 +19,11 @@ int zahl;
 zahl = (int)d;    -> Ergebnis: 1234
 ```
 
+Note:
+int -> Double implizit (autom vom Compiler)
+
+zahl = (int)d; explizit (auch mit Convert möglich)
+
 
 <!-- .slide: class="left" -->
 ## Beispiel
@@ -41,3 +46,9 @@ if (person != null) // Erfolgreich wenn person nicht null ist
     person.GetName();
 }
 ```
+
+Note: **VS** Casting, Collections2, Static
+
+ÜBUNG Medienverwaltung 3
+
+Erklärung zu statisch

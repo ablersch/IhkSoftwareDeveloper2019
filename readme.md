@@ -11,9 +11,9 @@ Diese Repository beinhaltet die Unterlagen für den Kurs **Software Developer IH
 
 * Installiere [Node.js](https://nodejs.org/en/)
 * Clone repository
-* Run `npm install` to install dependencies
-* Run `npm run build` to build presentation into `dist` folder
-* Run `npm start` during content creation to build in case of changes and serve using a local dev server
+* Starte `npm install` um alle Abhängigkeiten zu installieren
+* Starte `npm run build` um die Präsentation im `dist` Order zu erstellen
+* Starte `npm start` während der Inhaltserstellung um einen lokalen Entwicklungsserver zu starten
 
 ## Inhalt
 
@@ -22,6 +22,9 @@ Diese Repository beinhaltet die Unterlagen für den Kurs **Software Developer IH
 * Auflistungen
 * Namensräume
 * Casting
-* Exception handling
+* Fehlerbehandlung
+* Dateioperationen
+* Interfaces und abstrakte Klassen
+* Hilfestellungen und Tipps für Visual Studio
 
 Mit Übungsaufgaben zu den einzelnen Themen.

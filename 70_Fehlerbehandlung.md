@@ -16,6 +16,8 @@ Fehler abfangen und behandeln
 
 * **Logische Fehler:** Logische Fehler werden vom Compiler nicht erkannt, da es sich hierbei um Fehler in der Programmlogik handelt. Sie entstehen durch fehlerhafte Berechnungsformeln oder Fehler in der Anwendungslogik.
 
+Note: Syntaxfehler werden in VS angezeigt
+
 
 <!-- .slide: class="left" -->
 ## Strukturierte Fehlerbehandlung
@@ -28,6 +30,8 @@ eine stabile und umfassende Fehlerbehandlung.
 * **catch:** Dem Try Codeblock werden dann ein oder mehrere catch-Blöcke zur Fehlerbehandlung zugewiesen, die beim Eintreten eines bestimmten Fehlers abgearbeitet werden sollen.
 
 * **finally:** In einem abschließenden finally-Block, der in jedem Fall ausgeführt wird (immer), lassen sich Bereinigungsaufgaben durchführen oder Ressourcen freigeben (das Schließen von Dateien).
+
+Note: Ohne Try catch Programmfehler oder unsicherer Zustand (Dateizugriffe oder SQL Operationen)
 
 
 <!-- .slide: class="left" -->
@@ -85,6 +89,10 @@ static void Main(string[] args)
 }
 ```
 
+Note: **VS** Exception
+
+Zeigen: Bedingte Breakpoints
+
 
 <!-- .slide: class="left" -->
 ## Übersicht Exceptions
@@ -93,93 +101,4 @@ static void Main(string[] args)
 
 Liste über [System-Exceptions](https://www.completecsharptutorial.com/basic/complete-system-exception.php)
 
-
-<!-- .slide: class="left" -->
-## Eigene Ausnahmen erstellen
-
-In bestimmten Situationen kann es sinnvoll sein, eigene Ausnahmen zu erzeugen.
-
-```csharp
-string message = "Mein Fehler";
-throw new NameOfException (message);
-```
-
-Dabei sollte immer ein Name verwendet werden, der mit einer Beschreibung
-der Funktionalität beginnt und mit dem Wort **Exception** abschließt.
-
-
-<!-- .slide: class="left" -->
-## Konstruktoren einer Exception-Klasse
-
-Innerhalb einer Exception-Klasse sollten immer drei Konstruktoren deklariert werden, um die Instanzen mit unterschiedlichen Parametern initialisieren zu können.
-
-**Syntax:**
-
-```csharp
-public ExceptionClassName() : base()
-{
-}
-
-public ExceptionClassName(string message) : base(message)
-{
-}
-
-public ExceptionClassName(string message, Exception ex) : base(message, ex)
-{
-}
-```
-
-
-<!-- .slide: class="left" -->
-## Beispiel: Eigene Exception Klasse
-
-```csharp
-public class EmptyStringException : Exception
-{
-    public EmptyStringException() : base()
-    {
-    }
-    public EmptyStringException(string meldung) : base(meldung)
-    {
-    }
-    public EmptyStringException(string meldung, Exception ex) : base(meldung, ex)
-    {
-    }
-}
-
-class Test
-{
-    public string Plus(string txt1, string txt2)
-    {
-      if (txt1.Length == 0 || txt2.Length == 0) {
-        throw new EmptyStringException("Mindestens einer der Strings ist leer!");
-      }
-      else {
-        return txt1 + txt2;
-      }
-    }
-}
-
-class Program
-{
-  static void Main(string[] args)
-  {
-    Test eineInstanz = new Test();
-
-    try
-    {
-      Console.WriteLine(eineInstanz.Plus("Zusammen", ""));
-    }
-
-    catch (EmptyStringException e)
-    {
-      Console.WriteLine(e.Message);
-    }
-
-    finally
-    {
-      Console.WriteLine("finally-Block ausgeführt.");
-    }
-  }
-}
-```
+Note: Datei Fehler z.B. in System.IO Namespace

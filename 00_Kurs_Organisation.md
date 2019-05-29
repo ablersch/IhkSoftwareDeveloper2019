@@ -63,4 +63,45 @@ Samstags:
 
 <!-- .slide: class="left" -->
 ## Projektarbeit
-tbd
+
+Das Projekt muss als reines Softwareprojekt mit einem Zeitaufwand von 30-32
+Stunden ausgeführt werden. Es muss eine Projektdokumentation erstellt und
+abgegeben werden welche folgende Bestandteile beinhaltet:
+
+* Ist-Analyse
+* Soll-Zustandsbeschreibung
+* Ziel/Aufgabe der Anwendung
+* Dokumentation der Anwendung
+
+
+<!-- .slide: class="left" -->
+### Ziel der Projekte
+
+Bearbeitung einer programmiertechnischen Aufgaben- bzw. Fragestellung, die
+
+* Selbständig oder in der Gruppe (wird das Projekt in der Gruppe erarbeitet muss definiert werden wer für welchen Teil zuständig ist)
+* in einer vorgegebenen Frist
+* theoretisch fundiert und/oder anwendungsorientiert
+* unter Berücksichtigung des Kenntnisstandes
+* unter Berücksichtigung fachübergreifender Zusammenhänge bearbeitet wird.
+
+
+<!-- .slide: class="left" -->
+### Themenbereiche
+
+Die Themenbereiche für Ihre Projektarbeit leiten sich ab
+
+* aus den Inhalten des Kurses
+* aus angrenzenden Themengebieten
+
+**Beispiele möglicher Projekte:**
+
+* FTP-Server und Client (Light-Version)
+* Chat-Client-Server (Light-Version)
+* Zeit (Stempelung)-Server und Client (Light-Version)
+* Projekt-Datenbank
+* Zeiterfassung- und Auswertung (Datenbank)
+* Passwort-Manager
+* Einfaches Dokumentenverwaltungssystem
+* Zeitmanagement
+* Reisekosten

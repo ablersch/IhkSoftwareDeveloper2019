@@ -6,7 +6,7 @@ Wie muss eine Klasse aussehen?
 <!-- .slide: class="left" -->
 ## Schnittstellen (Interfaces)
 
-* [Schnittstellen](https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/interface) beschreiben eine Gruppe verwandter Methoden, die zu einer beliebigen Klasse oder Struktur gehören können. Schnittstellen können aus Methoden, Eigenschaften und Ereignissen bestehen.
+* [Schnittstellen](https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/interface) beschreiben eine Gruppe verwandter Methoden, die zu einer beliebigen Klasse oder Struktur gehören können. 
 
 * Sie dürfen keine Felder(Attribute) enthalten.
 
@@ -18,9 +18,17 @@ Wie muss eine Klasse aussehen?
 
 * Eine Klasse darf von mehreren Schnittstellen erben.
 
-* Interfaces werden häufig in der Praxis verwendet, wenn mehrere Programmierer an einem Projekt beteiligt sind.
+* Interfaces werden häufig in der Praxis verwendet, wenn mehrere Programmierer an einem Projekt beteiligt sind. Oder um festzulegen das verschiedene Klassen, immer die gleichen Member implementieren.
 
-* Oder um festzulegen das eine Klasse, die von einer Schnittstelle erbt, immer die gleichen Member implementiert.
+Note: Interface Klasse beginnt mit "I"
+
+Schnittstellen können aus Methoden, Eigenschaften und Ereignissen bestehen.
+
+Keine Zugriffsmodifizierer zugelassen.
+
+Jeder muss in der Klasse welche ein Interface nutzt alle Methoden implementieren
+
+**VS** Interface
 
 
 <!-- .slide: class="left" -->
@@ -63,9 +71,9 @@ class Zeitschriften : IMedien {
 
   * Eine Klasse die von einer abstrakten Klasse erbt muss die abstrakten Methoden implementieren.
 
-  * Member dürfen nicht private sein.
-
   * In der abgeleiteten Klasse müssen die abstrakten Methoden mit [`override`](https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/override) überschrieben werden.
+
+Note: z.B. geometrische Berechnung: Umfang gilt bei allen Klassen (Kreis, Rechteck, Dreieck), ist aber überall anderst zu berechnen.
 
 
 <!-- .slide: class="left" -->
@@ -104,7 +112,11 @@ class Zeitschriften : Medien {
 
   * Eine abstrakte Klasse kann Felder und Methoden vererben und zusätzlich Methodenrümpfe (Methodendefinitionen) definieren die implementiert werden und ausprogrammiert werden müssen.
 
+
+<!-- .slide: class="left" -->
 **Interfaces benutzen** um inhaltlich verschiedenen Klassen eine bestimmte Funktionalität zu bieten.
 
 **Abstrakte Klassen nutzen** als Basisklasse um inhaltlich gleichen Klassen eine gemeinsame Basis zu geben und zu erzwingen das bestimmte Methoden implementiert
 werden.
+
+Note: Übung Medienverwaltung 5
