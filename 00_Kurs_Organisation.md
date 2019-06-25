@@ -12,6 +12,7 @@ Ablauf, Termine, Prüfungen, etc.
 Note: Persönliche Vorstellung von den Teilnehmern und mir mit Vorkenntnisse
 
 
+
 <!-- .slide: class="left" -->
 ## Kurs Organisation
 

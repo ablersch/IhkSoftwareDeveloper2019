@@ -32,7 +32,7 @@ Kategorisieren
 
 * Innerhalb dieser Hierarchie können weitere Namespaces eingerichtet werden, mit denen Klassen nach Themen sortiert werden können.
 
-![Namespace](Images/Namespace.png)
+![Namespace](images/Namespace.png)
 
 
 <!-- .slide: class="left" -->
@@ -60,7 +60,7 @@ namespace NameOfNamespace
 
 * Im Projektmappen-Explorer erhält man eine Übersicht über eingebundene Verweise und kann neue hinzufügen.
 
-![Verweise](Images/VerweiseAnzeigen.png)
+![Verweise](images/VerweiseAnzeigen.png)
 
 
 <!-- .slide: class="left" -->

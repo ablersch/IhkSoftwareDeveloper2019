@@ -6,7 +6,7 @@ Was ist .NET
 <!-- .slide: class="left" -->
 ## Was ist das .NET Framework
 
-* Das .NET Framework bezeichnet eine von Microsoft entwickelte Plattform zur Entwicklung und Ausführung von Anwendungen für das web, Windows und Microsoft Azure.
+* Das .NET Framework bezeichnet eine von Microsoft entwickelte Plattform zur Entwicklung und Ausführung von Anwendungen für das Web, Windows und Microsoft Azure.
 
 * .NET ist plattformunabhängig.
 
@@ -30,7 +30,8 @@ Note: Plattformunabhängig = Unterschied in Architektur, Prozessor und OS. Wird 
 <!-- .slide: class="left" -->
 ## .NET Architektur
 
-![DotNet Architektur](Images/DotNetArchitecture.png)
+![DotNet Architektur](images/DotNetArchitecture.png)
+
 
 <!-- .slide: class="left" -->
 ## Ablauf der Entwicklung eines .NET Programms
@@ -47,7 +48,7 @@ Note: Plattformunabhängig = Unterschied in Architektur, Prozessor und OS. Wird 
 <!-- .slide: class="left" -->
 ## Ablauf der Entwicklung eines .NET Programms
 
-![DotNet Compiler CIL zu nativem Code](Images/DotNetCILCompiler.png)
+![DotNet Compiler CIL zu nativem Code](images/DotNetCILCompiler.png)
 
 Note: CLI (systemunabhängig) = Programmbefehle als Bytefolge
 
@@ -104,8 +105,8 @@ Note: Solution -> Eigenschaften -> Assemblyinformationen
 <!-- .slide: class="left" -->
 ## Assemblierung
 
-![Single File Assembly](Images/SingleFileAssembly.png)
+![Single File Assembly](images/SingleFileAssembly.png)
 
 Note: Mögliche Komponenten einer Assembly
 
-Auch Multi FIle Assembly möglich
+Auch Multi File Assembly möglich

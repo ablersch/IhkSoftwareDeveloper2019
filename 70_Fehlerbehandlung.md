@@ -37,7 +37,7 @@ Note: Ohne Try catch Programmfehler oder unsicherer Zustand (Dateizugriffe oder 
 <!-- .slide: class="left" -->
 ## Ablauf Fehlerbehandlung
 
-![Fehlerbehandlung ](Images/Fehlerbehandlung.png)
+![Fehlerbehandlung ](images/Fehlerbehandlung.png)
 
 
 <!-- .slide: class="left" -->
@@ -97,7 +97,7 @@ Zeigen: Bedingte Breakpoints
 <!-- .slide: class="left" -->
 ## Übersicht Exceptions
 
-![image](Images/ExceptionUebersicht.png)
+![image](images/ExceptionUebersicht.png)
 
 Liste über [System-Exceptions](https://www.completecsharptutorial.com/basic/complete-system-exception.php)
 

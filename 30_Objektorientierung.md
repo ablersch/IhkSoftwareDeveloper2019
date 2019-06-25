@@ -26,7 +26,7 @@ Klassen, Objekte und Instanzen
 <!-- .slide: class="left" -->
 ## Objektorientierung
 
-![Objektorientierung](Images/ObjektorientierteProgrammierung.jpg)
+![Objektorientierung](images/ObjektorientierteProgrammierung.jpg)
 
 Mehr zum Thema [objektorientierte Programmierung](https://entwickler.de/online/development/einfuehrung-programmierung-objektorientierte-programmentwicklung-197372.html)
 
@@ -148,7 +148,7 @@ Note: **VS** Klasse erzeugen und nutzen
 <!-- .slide: class="left" -->
 ## Darstellung Kapselung
 
-![Klassenkapselung](Images/Klassenkapselung.png)
+![Klassenkapselung](images/Klassenkapselung.png)
 
 Note: Variabeln sind nur intern nutzbar wenn diese private sind
 
@@ -450,6 +450,7 @@ Note: ÜBUNG Intervall und Sekundenspeicher
 
 <!-- .slide: class="left" -->
 # Vererbung
+
 ## Problemstellung
 
 Oft werden mehrere Klassen benötigt, die in weiten Teilen gleiche Funktionalitäten bereitstellen und gleiche Eigenschaften haben.
@@ -469,7 +470,8 @@ Man versucht, zu ähnlichen Klassen, eine gemeinsame
 
 <!-- .slide: class="left" -->
 ## Vererbung
-![Vererbung](Images/Vererbung3.png)
+
+![Vererbung](images/Vererbung3.png)
 
 
 <!-- .slide: class="left" -->
@@ -499,7 +501,7 @@ A1  A3  A4
 <!-- .slide: class="left" -->
 ## Beispiel
 
-![Vererbung](Images/Vererbung2.png)
+![Vererbung](images/Vererbung2.png)
 
 Note: **Ist ein** oder **ist eine Art von**
 
@@ -511,7 +513,7 @@ Assoziation = Beziehung keine Vererbung
 <!-- .slide: class="left" -->
 ## Beispiel
 
-![Vererbung](Images/Vererbung.png)
+![Vererbung](images/Vererbung.png)
 
 Note: Konstruktor und private Elemente werden nicht vererbt.
 
@@ -538,6 +540,7 @@ class Mensch : Lebewesen
     ...
 }
 ```
+
 Note: IN **VS** zeigen:
 
 * Reihenfolge von Konstruktoraufrufe
@@ -568,7 +571,7 @@ Note: IN **VS** zeigen:
 <!-- .slide: class="left" -->
 ## Klassenkonzept
 
-![UML Klassendarstellung](Images/UmlKlassendarstellung.png)
+![UML Klassendarstellung](images/UmlKlassendarstellung.png)
 
 
 <!-- .slide: class="left" -->
