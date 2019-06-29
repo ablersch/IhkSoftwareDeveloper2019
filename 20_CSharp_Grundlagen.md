@@ -57,7 +57,7 @@ Zeigen in **VS**
 * Pascal-Schreibweise (jeden Anfangsbuchstaben eines Wortes groß)
     * bei Klassen- und Methodennamen
     * **WriteToErrorLog()**
-* Camel-Schreibweise (jeden, außer den ersten Anfangsbuchstaben eines Wortes groß)
+* Camel-Schreibweise (jeden Anfangsbuchstaben eines Wortes groß, außer beim ersten Wort)
     * bei Variablen
     * **string exportFilePath**
 * Großbuchstaben
@@ -224,7 +224,7 @@ Namespace System. Sie lauten:
 
 | Methode      | Beschreibung
 | -------------|-------------|
-| `Read()`     | Liest ein Zeichen von der Standardeingabe ein.
+| `Read()`     | Liest ein Zeichen (int) von der Standardeingabe ein.
 | `ReadLine()` | Liest eine Zeile als **String** von der Standardeingabe.
 | `Write()`    | Gibt einen String auf der Standardausgabe ohne Zeilenumbruch aus.
 | `WriteLine()`| Entspricht Write() nur mit Zeilenumbruch.

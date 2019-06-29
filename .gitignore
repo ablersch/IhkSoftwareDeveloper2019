@@ -10,8 +10,8 @@
 *.sln.docstates
 
 #Uebung_1*
-Loesung_1
-Uebung_2*
+#Loesung_1
+#Uebung_2*
 Loesung_2
 Uebung_3*
 Loesung_3
