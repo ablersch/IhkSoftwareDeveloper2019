@@ -35,11 +35,7 @@ namespace Programmaufbau //Projektteile werden in Namensräumen zusammengefasst
 
             for (int i = 0; i < text.Length; i++)
             {
-                for (int j = 0; j <= i; j++)
-                {
-                    Console.WriteLine(text.ElementAt(j));
-                }
-                Console.Write("\n");
+                Console.WriteLine(text.ElementAt(i));
             }
 
             Console.WriteLine("Taste drücken um zu beenden...");
@@ -134,9 +130,9 @@ Hallo C# - Fans
 
 ```csharp
 string text = "IHK Ulm";
-if (text == "IHK Ulm")   => true
-if (text.Equals("IHK Ulm"))  => true
-if (text.Equals("ihk ulm", StringComparison.OrdinalIgnoreCase))  => true
+if (text == "IHK Ulm")       // => true
+if (text.Equals("IHK Ulm"))  // => true
+if (text.Equals("ihk ulm", StringComparison.OrdinalIgnoreCase))  // => true
 ```
 
 * Länge eines Strings ermitteln
@@ -288,8 +284,7 @@ Note: Platzhalter können mehrfach verwendet werden.
 * Eine Methode kann nur einen oder auch keinen (void) Wert zurückgeben.
 * Methoden werden innerhalb der Klasse ausformuliert.
 * Methoden gehören immer zu einer Klasse.
-* Eine Klasse kann mehrere Methoden enthalten, wobei die Methoden in
-* beliebiger Reihenfolge deklariert werden können.
+* Eine Klasse kann mehrere Methoden enthalten, wobei die Methoden in beliebiger Reihenfolge deklariert werden können.
 * Mit Methoden wird eine Aktion ausgeführt, Daten verändert oder ausgegeben.
 * Mehr zum Thema [Methoden](https://docs.microsoft.com/de-de/dotnet/csharp/methods)
 
@@ -341,7 +336,7 @@ void Multiplikation(double) {}
 void Multiplikation(int) {}
 void Multiplikation(int, int) {}
 void Multiplikation(float, float, int) {}
-int Multiplikation(float, float, int) {} --> Fehler, nicht möglich
+int Multiplikation(float, float, int) {} // --> Fehler, nicht möglich
 ```
 
 
@@ -562,7 +557,7 @@ Mehr zum Thema [While-Schleifen](https://docs.microsoft.com/de-de/dotnet/csharp/
 <!-- .slide: class="left" -->
 ## Foreach-Anweisung
 
-Die [foreach-Anweisung](https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/foreach-in)) kann auf Arrays und für jede Klasse eingesetzt
+Die [foreach-Anweisung](https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/foreach-in) kann auf Arrays und für jede Klasse eingesetzt
 werden, die die Schnittstelle IEnumerable implementiert. Fehler mit
 falscher Indexierung sind nicht mehr möglich.
 
