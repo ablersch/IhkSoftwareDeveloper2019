@@ -19,7 +19,7 @@ Klassen, Objekte und Instanzen
 * Die Fehlersuche wird durch die kompakte Struktur der Objekte vereinfacht.
 * Quellcode wird überschaubarer.
 * Änderungen können einfacher vorgenommen werden.
-* Neue Objekte können leichter in die Anwendung eingebunden werden.
+* Neue Klassen können leichter in die Anwendung eingebunden werden.
 * Objekte werden nur dann erzeugt wenn diese benötigt werden (Effizienter Umgang mit Speicherplatz).
 
 
