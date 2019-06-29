@@ -160,7 +160,7 @@ text = text.Substring(0, text.IndexOf("K") +1); // Array Index beginnt bei 0
 text = text.Replace("H", "A");
  ```
 
-Note: weitere Methoden zeigen in **VS**. z.B. IsNullOrEmpty, Trim, Remove, ...
+Note: weitere Methoden zeigen in **VS**. z.B. string.IsNullOrEmpty, Trim, Remove, ...
 
 
 <!-- .slide: class="left" -->
@@ -234,7 +234,7 @@ Es gibt mehrere Möglichkeiten, um eine bestimmte Ausgabe zu erzeugen.
 **Beispiel:** Es soll die Ausgabe *"Die Summe von 1500 plus 500 ist
 2000"* erzeugt werden.
 
-Note: cw (if, for, ...) + tab + Tab in **VS**
+Note: cw (if, for, ...) + tab + Tab in **VS** zeigen Daten von Console lesen
 
 
 <!-- .slide: class="left" -->

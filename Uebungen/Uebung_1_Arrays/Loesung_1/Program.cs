@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Übung_Arrays
 {
@@ -16,6 +12,7 @@ namespace Übung_Arrays
             for (int i = 0; i < zeile.Length; i++)
             {
                 Console.Write("Zeile [" + i + "]: ");
+
                 for (int j = 0; j < spalte.Length; j++)
                 {
                     Console.Write(zeile[i] * spalte[j] + " ");

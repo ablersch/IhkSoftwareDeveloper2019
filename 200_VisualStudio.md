@@ -52,7 +52,7 @@ Extras &rarr; Einstellungen importieren/exportieren &rarr; Ausgewählte Umgebung
 <!-- .slide: class="left" -->
 ### Klassendiagramm erstellen
 
-![Klassendiagramm](Images/KlassendiagrammErstellen.png)
+![Klassendiagramm](images/KlassendiagrammErstellen.png)
 
 
 <!-- .slide: class="left" -->
@@ -60,11 +60,11 @@ Extras &rarr; Einstellungen importieren/exportieren &rarr; Ausgewählte Umgebung
 
 Fehlende Using Verweise automatisch aufnehmen
 
-![Using](Images/using.png)
+![Using](images/using.png)
 
 Oder über Smarttag
 
-![Using](Images/using2.png)
+![Using](images/using2.png)
 
 
 <!-- .slide: class="left" -->
@@ -90,13 +90,13 @@ Switch + Tab + Tab &rarr; Name der Enum Variable Enter + Enter &rarr; nun wird a
 
 Name der Methode an der Stelle schreiben wo sie benutzt werden soll.
 
-![MethodeErstellen](Images\MethodeErstellen.png)
+![MethodeErstellen](images\MethodeErstellen.png)
 
 
 <!-- .slide: class="left" -->
 ### Methode umbenennen
 
-![MethodenUmbenennen](Images\MethodenUmbenennen.png)
+![MethodenUmbenennen](images\MethodenUmbenennen.png)
 
 
 <!-- .slide: class="left" -->
@@ -104,7 +104,7 @@ Name der Methode an der Stelle schreiben wo sie benutzt werden soll.
 
 Automatisch erstellen mit „Bearbeiten“ &rarr; Feld kapseln
 
-![PropertyErstellen](Images\PropertyErstellen.png)
+![PropertyErstellen](images\PropertyErstellen.png)
 
 ```csharp
 private string name;
