@@ -13,7 +13,7 @@ Erstellen Sie eine Konsolenanwendung mit einer weiteren Klasse "Medien" (neue Da
 
 Jedes Medium soll eine ganzzahlige Signatur, einen Titel und ein Attribut für den Leihstatus (präsent/entliehen) besitzen.
 
-Außerdem soll die Klasse folgende Methoden haben (weitere Beschribung siehe Tabelle):
+Außerdem soll die Klasse folgende Methoden haben (weitere Beschreibung siehe Tabelle):
 
 * `Anlegen()`
 * `List()`
@@ -22,7 +22,7 @@ Außerdem soll die Klasse folgende Methoden haben (weitere Beschribung siehe Tab
 
 ## Teil 2
 
-Erstellen Sie in der Main Methode ein Menü welches die Methoden aus der "Medien" Klasse aufruft. Aufbau des Menüs bitte aus der Tabelle entnehmen. Es genügt, wenn aktuell nur ein Medium Objekt existieren kann
+Erstellen Sie in der Main Methode ein Menü welches die Methoden aus der "Medien" Klasse aufruft. Aufbau des Menüs bitte aus der Tabelle entnehmen. Es genügt, wenn aktuell nur ein Medium Objekt existieren kann.
 
 **Folgende Funktionen/Menüpunkte sollen zur Verfügung stehen:**
 

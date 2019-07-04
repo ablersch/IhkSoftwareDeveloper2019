@@ -130,7 +130,7 @@ Punktoperator.
 meinePerson.alter = 20;
 ```
 
-Note: **VS** Klasse erzeugen und nutzen
+Note: **VS** Klasse erzeugen und nutzen. IN **VS** zeigen, Sichtbarkeit von Variablen (Klassenvariable, Variable in Methode, in Schleife)
 
 
 <!-- .slide: class="left" -->
@@ -144,6 +144,8 @@ Note: **VS** Klasse erzeugen und nutzen
 
 * Werte können beim lesen verändert und aufbereitet werden.
 
+Note: Prüfen auf Schwellwerte oder entfernen von Leerzeichen
+
 
 <!-- .slide: class="left" -->
 ## Darstellung Kapselung
@@ -152,7 +154,7 @@ Note: **VS** Klasse erzeugen und nutzen
 
 Note: Variabeln sind nur intern nutzbar wenn diese private sind
 
-Methoden sind meiste nach außen sichtbar und greifen auf die geschützten Variablen zu.
+Methoden sind meist nach außen sichtbar und greifen auf die geschützten Variablen zu.
 
 ÜBUNG Medienverwaltung 1
 
@@ -161,7 +163,7 @@ Methoden sind meiste nach außen sichtbar und greifen auf die geschützten Varia
 ## Eigenschaften
 
 Um die Kapselung zu erreichen werden die Attribute **private**
-deklariert. Der Zugriff erfolgt über eine Property (Eigenschaft).
+deklariert. Der Zugriff erfolgt über eine [Property (Eigenschaft)](https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/classes-and-structs/properties).
 
 ```csharp
 public class Person
@@ -173,15 +175,18 @@ public class Person
     public int Alter // Eigenschaft (Property)
     {
         get {return alter;}
-        set {alter = value;} // value beinhaltet den uebergebenen Wert
+        set {alter = value;} // value beinhaltet den übergebenen Wert
     }
 
-    // Alternative expression-bodied members
+    // Alternative expression-bodied members (return nicht notwendig)
     //public int Alter
     //{
     //    get => alter;
     //    set => alter = value;
     //}
+
+    // Alternative automatic Property
+    // public int Alter { get; set; }
 }
 ```
 
@@ -226,9 +231,9 @@ int cClass = Person.classCount;
 
 * Zusammen mit jedem Objekt wird vom Compiler automatisch eine Objektreferenz auf das eigene Objekt erzeugt.
 
-* Diese Referenzvariable **this** kann in allen Methoden des Objekts eingesetzt werden.
+* Diese Referenzvariable [this](https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/this) kann in allen Methoden des Objekts eingesetzt werden.
 
-* Sie kennzeichnet das aktuelle Objekt.
+* Kennzeichnet das aktuelle Objekt.
 
 Note: Sich selbst als Parameter übergeben.
 
@@ -255,7 +260,10 @@ namespace Objektreferenz
             this.vorname = vorname;
             this.alter = alter;
         }
+    }
 
+    class Program
+    {
         static void Main(string[] args)
         {
             Person hugo = new Person();
@@ -270,7 +278,7 @@ namespace Objektreferenz
 <!-- .slide: class="left" -->
 # Konstruktor & Destruktor
 
-Jede Klasse enthält mindestens einen Konstruktor und einen Destruktor.
+Jede Klasse enthält mindestens einen Konstruktor und einen Destruktor/Finalizer.
 Bei der Erzeugung eines Objekts wird automatisch der Konstruktor
 aufgerufen. Innerhalb des Konstruktors können dann zum Beispiel
 Attribute der Klasse initialisiert oder Variablen mit Standardwerten
@@ -280,9 +288,7 @@ Der Destruktor zerstört die vom Konstruktor erzeugte Instanz des Objekts
 und gibt somit den Speicherplatz wieder frei.
 
 Der Compiler stellt für jede Klasse automatisch einen parameterlosen
-Konstruktor und Destruktor bereit. Es können aber auch eigene
-Konstruktoren und Destruktoren, mit erweiterter Funktionalität,
-programmiert werden.
+Konstruktor und Destruktor bereit. Es können eigene Konstruktoren und Destruktoren, mit erweiterter Funktionalität, programmiert werden.
 
 
 <!-- .slide: class="left" -->
@@ -310,7 +316,7 @@ programmiert werden.
 
 * Mehr zum Thema [Konstruktoren](https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/classes-and-structs/constructors)
 
-Note: private Konstruktor wenn die Klasse nicht initialisiert werden soll
+Note: private Konstruktor: wenn die Klasse nicht initialisiert werden soll
 
 
 <!-- .slide: class="left" -->
@@ -331,11 +337,14 @@ class Person
 **Definition des Standard-Konstruktor:**
 
 ```csharp
+string name;
+string vorname;
+
 public Person()
 {
     //Initialisierung mit festen Werten
-    Name = "Name unbekannt";
-    Vorname = "Vorname unbekannt";
+    name = "Name unbekannt";
+    vorname = "Vorname unbekannt";
 }
 ```
 
@@ -358,7 +367,7 @@ public Person()
       public Person(string nachname, string vorname)
       {
         name = nachname;
-        vorname = vorname;
+        this.vorname = vorname;
       }
     }
 ```
@@ -409,7 +418,7 @@ Note: Anderer überladener Konstruktor wird zuerst mit this aufgerufen. Danach w
 
 Initialisierungscode sollte in nur einem Konstrukt sein der von anderen aufgerufen wird.
 
-**VS** Konstruktor
+**VS** Konstruktor zeigen (Klasse erstellen mit zwei Konstruktoren. Der  Konstruktor mit einem Wert ruft anderen Konstruktor mit zwei Werten auf)
 
 
 <!-- .slide: class="left" -->
@@ -421,13 +430,13 @@ Initialisierungscode sollte in nur einem Konstrukt sein der von anderen aufgeruf
 
 * Destruktoren werden verwendet, wenn vor der Zerstörung des Objekts noch Aktionen ausgeführt werden müssen.
 
-* Freigabe von dynamisch allokiertem Speicher oder Abspeichern einer Datei vor dem Schließen
+* Freigabe von dynamisch allokiertem Speicher oder Abspeichern einer Datei vor dem Schließen.
 
 * Der Destruktor besitzt den selben Namen wie die Klasse nur mit vorangestellter Tilde "\~".
 
 * Er kann nicht direkt aufgerufen werden.
 
-* Mehr zum Thema [Destruktor](https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/classes-and-structs/destructors)
+* Mehr zum Thema [Destruktor/Finalizer](https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/classes-and-structs/destructors)
 
 
 <!-- .slide: class="left" -->
@@ -463,9 +472,7 @@ Zum Beispiel bei den Klassen **Mensch** und **Tier**.
 
 **Lösung:**
 
-Man versucht, zu ähnlichen Klassen, eine gemeinsame
-**Oberklasse** zu finden die alle Gemeinsamkeiten beinhaltet. In den
-**Unterklassen** werden lediglich die Unterschiede ergänzt.
+Man versucht, zu ähnlichen Klassen, eine gemeinsame **Oberklasse** zu finden die alle Gemeinsamkeiten beinhaltet. In den **Unterklassen** werden lediglich die Unterschiede ergänzt.
 
 
 <!-- .slide: class="left" -->
@@ -480,10 +487,7 @@ Die Vererbung (Ableitung) erlaubt die Definition neuer Klassen auf der
 Basis von bestehenden Klassen. Dabei werden Eigenschaften und Methoden
 übernommen.
 
-Die Klasse deren Member vererbt werden, wird
-**Basisklasse/Elternklasse/Oberklasse** genannt, und die Klasse, die
-diese Member erbt, wird **abgeleitete Klasse/Kindklasse/Unterklasse**
-genannt.
+Die Klasse deren Member vererbt werden, wird **Basisklasse/Elternklasse/Oberklasse** genannt, und die Klasse, die diese Member erbt, wird **abgeleitete Klasse/Kindklasse/Unterklasse** genannt.
 
 **Beispiel:** Eine Basisklasse **Lebewesen** kann eine abgeleitete
 Klasse **Tier** und eine weitere abgeleitete Klasse **Reptil** haben.
@@ -541,7 +545,7 @@ class Mensch : Lebewesen
 }
 ```
 
-Note: IN **VS** zeigen:
+Note: In **VS** zeigen:
 
 * Reihenfolge von Konstruktoraufrufe
 * readonly Schlüsselwort

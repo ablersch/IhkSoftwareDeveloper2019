@@ -4,7 +4,7 @@ using System.Linq;
 namespace Uebung_Palindrom
 {
     class Program
-    {       
+    {
         static void Main(string[] args)
         {
             Console.WriteLine("Palindrom-Test");
@@ -14,7 +14,7 @@ namespace Uebung_Palindrom
 
             bool isPalindrom = IsPalindrom(wort);
 
-            if (isPalindrom == true)
+            if (isPalindrom)
             {
                 Console.WriteLine($"Das Wort {wort} ist ein Palindrom\n");
             }
@@ -37,7 +37,7 @@ namespace Uebung_Palindrom
 
             // Entferne alle Leerzeichen
             checkForPalindrom = checkForPalindrom.Replace(" ", "");
-            
+
             // Alles in Kleinbuchstaben
             checkForPalindrom = checkForPalindrom.ToLower();
 
