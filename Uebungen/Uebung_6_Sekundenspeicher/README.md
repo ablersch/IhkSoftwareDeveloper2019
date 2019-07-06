@@ -4,14 +4,14 @@ Erstellen Sie eine Klasse namens „Sekunden“. Diese Klasse soll Sekunden spei
 
 Folgenden Methoden sollen implementiert werden:
 
-* GetSeconds()
-* GetMinutes()
-* GetHours()
-* GetDays()
+* `public ulong GetSeconds()`
+* `public ulong GetMinutes()`
+* `public ulong GetHours()`
+* `public ulong GetDays()`
 
 Die Sekunden sollen dabei in die entsprechenden Formate umgerechnet werden. (xx Sekunden entsprechen xx Minuten).
 
-Verwenden Sie alle Methoden der Klasse mindestens einmal. Zum "Speichern" der Sekunden benutzen Sie bitte die Variable "sekunden". Die Variable soll mit dem Konstruktor der Klasse befüllt werden.
+Verwenden Sie alle Methoden der Klasse mindestens einmal. Zum "Speichern" der Sekunden benutzen Sie bitte die Variable "sekunden". Die Variable soll mit dem **Konstruktor** der Klasse befüllt werden.
 
 ## Bemerkung
 

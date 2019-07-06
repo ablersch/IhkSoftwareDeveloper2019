@@ -523,8 +523,6 @@ Note: Konstruktor und private Elemente werden nicht vererbt.
 
 ChangeRequest kann alle Methoden und Variabeln von der Basisklasse verwenden
 
-**VS** zeigen in Vererbung
-
 
 <!-- .slide: class="left" -->
 ## Syntax
@@ -545,11 +543,10 @@ class Mensch : Lebewesen
 }
 ```
 
-Note: In **VS** zeigen:
+Note: **VS** Beispiel Vererbung
+In **VS** zeigen:
 
 * Reihenfolge von Konstruktoraufrufe
-* readonly Schlüsselwort
-* protected
 * region --> wenn Gliederung in VS aktiv ist
 * Klasse erstellen mit zwei Methoden
 * Aufruf der Methoden

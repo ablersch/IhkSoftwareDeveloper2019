@@ -29,7 +29,7 @@ namespace Vererbung
         
         #region Konstruktoren
 
-        public Tier() :base (5)  // Zugriff auf Konstruktor der Basisklasse
+        public Tier() //:base (5)  // Zugriff auf Konstruktor der Basisklasse
         {
             NameEigenschaft = "";   // nur noch zugreifen über die Eigenschaft
             Console.WriteLine("Default Konstruktor Tier");

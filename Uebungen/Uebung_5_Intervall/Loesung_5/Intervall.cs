@@ -20,6 +20,7 @@ namespace Uebung_Intervall
 
         public float Avg()
         {
+            // Cast um Komma Zahl zu erhalten
             return (float)(max - min) / 2;
         }
 
