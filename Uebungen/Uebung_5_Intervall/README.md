@@ -2,17 +2,17 @@
 
 Implementieren Sie die Klasse **Intervall** zur Darstellung von int-Zahlenintervallen mit folgenden Eigenschaften:
 
-* Attribute für die Unter- und die Obergrenze welche nur in der Intervallklasse sichtbar/zugreifbar (private) sind
+* Attribute (nin und max) für die Unter- und die Obergrenze welche nur in der Intervallklasse sichtbar/zugreifbar (private) sind
 
 * Mit einem Konstruktor mit Parametern um initial die Werte für Min und Max zu setzen
 
 * Methode „Size“ zur Berechnung der Intervallgröße (max–min) `public int Size()`
 
-* Methode „Avg“ zur Berechnung des Intervall-Mittelwertes ((max-min)/2)
+* Methode „Avg“ zur Berechnung des Intervall-Mittelwertes ((max-min)/2) `public int Avg()`
 
 * Methode „Move“ zur Verschiebung des Intervalls (max + Verschiebung ; min + Verschiebung) `public void Move(int verschiebung)`
 
-* Methode „Scale“ zum Skalieren des Intervalls (max * Skalierungswert; min * Skalierungswert)
+* Methode „Scale“ zum Skalieren des Intervalls (max * Skalierungswert; min * Skalierungswert) `public void Scale(int offset)`
 
 * Methode „IntervallAusgabe“ zum Ausgeben der Intervallwerte (max und min)
 

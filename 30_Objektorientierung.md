@@ -195,7 +195,6 @@ Note: **VS** Eigenschaft zeigen mit automa. Generierung
 Zuweisung von Wert wie bei einer Variable (nicht a.SetName("aa"))
 
 In einer Eigenschaft sind getter und setter inkludiert.
-
 * Werte können beim lesen und schreiben geprüft bzw bearbeitet werden
 * Schreib- oder Lesezugriff einschränkbar
 
@@ -496,13 +495,11 @@ Die Klasse deren Member vererbt werden, wird **Basisklasse/Elternklasse/Oberklas
 Klasse **Tier** und eine weitere abgeleitete Klasse **Reptil** haben.
 Also ein Reptil ist ein Tier und ein Tier ist ein Lebewesen.
 
-Note: Autohaus
+Note: Person
 
-Auto        LKW
+Mitarbeiter        Kunde
 
-Audi    BMW
-
-A1  A3  A4
+fest Angestellter     Leiharbeiter
 
 
 <!-- .slide: class="left" -->
@@ -562,7 +559,7 @@ Note: In **VS** zeigen:
 
 
 <!-- .slide: class="left" -->
-## Konstruktoren
+## Vererbung und Konstruktoren
 
 * Es werden keine Konstruktoren vererbt!
 
@@ -573,12 +570,6 @@ Note: In **VS** zeigen:
 ```csharp
 :base(Parameter)
 ```
-
-
-<!-- .slide: class="left" -->
-## Klassenkonzept
-
-![UML Klassendarstellung](images/UmlKlassendarstellung.png)
 
 
 <!-- .slide: class="left" -->

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konstruktor", "Konstruktor.csproj", "{15CC5CA0-85DE-47FB-948C-6CFD12C67C8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15CC5CA0-85DE-47FB-948C-6CFD12C67C8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15CC5CA0-85DE-47FB-948C-6CFD12C67C8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15CC5CA0-85DE-47FB-948C-6CFD12C67C8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15CC5CA0-85DE-47FB-948C-6CFD12C67C8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C18E9264-AF7B-408D-B50A-9236E705D510}
+	EndGlobalSection
+EndGlobal

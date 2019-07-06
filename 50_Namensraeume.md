@@ -1,6 +1,6 @@
 # Namensräume
 
-Schon oft genutzt doch warum werden diese benötigt?
+Warum werden diese benötigt?
 
 
 <!-- .slide: class="left" -->
