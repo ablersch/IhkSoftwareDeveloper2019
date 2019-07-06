@@ -15,8 +15,8 @@
         }
 
         public ulong GetMinutes()
-        {
-            return seconds / 60;
+        {     
+            return seconds / 60; ;
         }
 
         public ulong GetHours()
