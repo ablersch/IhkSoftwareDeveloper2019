@@ -132,6 +132,8 @@ meinePerson.alter = 20;
 
 Note: **VS** Klasse erzeugen und nutzen. IN **VS** zeigen, Sichtbarkeit von Variablen (Klassenvariable, Variable in Methode, in Schleife)
 
+ÜBUNG Medienverwaltung 1
+
 
 <!-- .slide: class="left" -->
 ## Was ist Kapselung
@@ -155,8 +157,6 @@ Note: Prüfen auf Schwellwerte oder entfernen von Leerzeichen
 Note: Variabeln sind nur intern nutzbar wenn diese private sind
 
 Methoden sind meist nach außen sichtbar und greifen auf die geschützten Variablen zu.
-
-ÜBUNG Medienverwaltung 1
 
 
 <!-- .slide: class="left" -->
@@ -195,6 +195,9 @@ Note: **VS** Eigenschaft zeigen mit automa. Generierung
 Zuweisung von Wert wie bei einer Variable (nicht a.SetName("aa"))
 
 In einer Eigenschaft sind getter und setter inkludiert.
+
+* Werte können beim lesen und schreiben geprüft bzw bearbeitet werden
+* Schreib- oder Lesezugriff einschränkbar
 
 <!-- .slide: class="left" 
 ## Klassen- & Instanzvariablen

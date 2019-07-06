@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 
 namespace Konstruktor
 {
@@ -7,6 +6,7 @@ namespace Konstruktor
     {
         static void Main(string[] args)
         {
+            new Fahrzeug();
             new Fahrzeug(12);
             new Fahrzeug(1800, 29332312);
         }
@@ -29,6 +29,12 @@ namespace Konstruktor
         {
             gewicht = gew;
             fahrzeugId = id;
+        }
+
+        public void Ausgabe()
+        {
+            Console.WriteLine($"Gewicht: {gewicht}");
+            Console.WriteLine($"Id: {fahrzeugId}");
         }
     }
 }
