@@ -485,15 +485,11 @@ Man versucht, zu ähnlichen Klassen, eine gemeinsame **Oberklasse** zu finden di
 
 <!-- .slide: class="left" -->
 ## Vererbung
-Die Vererbung (Ableitung) erlaubt die Definition neuer Klassen auf der
-Basis von bestehenden Klassen. Dabei werden Eigenschaften und Methoden
-übernommen.
+Die Vererbung (Ableitung) erlaubt die Definition neuer Klassen auf der Basis von bestehenden Klassen. Dabei werden Eigenschaften und Methoden übernommen.
 
 Die Klasse deren Member vererbt werden, wird **Basisklasse/Elternklasse/Oberklasse** genannt, und die Klasse, die diese Member erbt, wird **abgeleitete Klasse/Kindklasse/Unterklasse** genannt.
 
-**Beispiel:** Eine Basisklasse **Lebewesen** kann eine abgeleitete
-Klasse **Tier** und eine weitere abgeleitete Klasse **Reptil** haben.
-Also ein Reptil ist ein Tier und ein Tier ist ein Lebewesen.
+**Beispiel:** Eine Basisklasse **Lebewesen** kann eine abgeleitete Klasse **Tier** und eine weitere abgeleitete Klasse **Reptil** haben. Also ein Reptil ist ein Tier und ein Tier ist ein Lebewesen.
 
 Note: Person
 
@@ -543,17 +539,6 @@ class Mensch : Lebewesen
 }
 ```
 
-Note: **VS** Beispiel Vererbung
-In **VS** zeigen:
-
-* Reihenfolge von Konstruktoraufrufe
-* region --> wenn Gliederung in VS aktiv ist
-* Klasse erstellen mit zwei Methoden
-* Aufruf der Methoden
-* Aufruf Konstruktor
-
-ÜBUNG Medienverwaltung 2
-
 
 <!-- .slide: class="left" -->
 ## Vererbung und Konstruktoren
@@ -570,8 +555,7 @@ In **VS** zeigen:
 
 
 <!-- .slide: class="left" -->
-Um aus einer abgeleiteten Klasse auf die Basisklasse zuzugreifen gibt es
-das Schlüsselwort **base**:
+Um aus einer abgeleiteten Klasse auf die Basisklasse zuzugreifen gibt es das Schlüsselwort **base**:
 
 * Einen Konstruktor der Basisklasse aufrufen:
 
@@ -585,22 +569,30 @@ public Person(string beruf, string name, int alter) : base(name, alter)
 base.Name = "Fritz";
 ```
 
+Note: **VS** Beispiel Vererbung
+In **VS** zeigen:
+
+* Reihenfolge von Konstruktoraufrufe
+* region --> wenn Gliederung in VS aktiv ist
+* Klasse erstellen mit zwei Methoden
+* Aufruf der Methoden
+* Aufruf Konstruktor
+
+ÜBUNG Medienverwaltung 2
+
 
 <!-- .slide: class="left" -->
 ## Weitere Schlüsselworte
 
-* **virtual:** Wird ein Klassenmember in der Basisklasse mit virtual deklariert kann er später von einer abgeleiteten Klasse überschrieben werden.
+* [virtual:](https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/virtual) Wird ein Klassenmember in der Basisklasse mit virtual deklariert kann er später von einer abgeleiteten Klasse überschrieben werden.
 
-* **override:** Überschreibt einen Klassenmember der als virtual deklariert wurde (erweitert bzw ändert Funktion der Basisklasse). Die zuletzt überschriebene Methode wird immer benutzt!
+* [abstract:](https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/abstract) Damit kann angegeben werden dass die Klasse nur als Basisklasse verwendet werden kann (es darf keine Instanz erstellt werden). Klassen die von einer abstrakten Klasse erben müssen alle Klassenmember die abstract sind implementieren und haben keine Implementierung von Code sondern nur die Definition!
 
-* **new Modifizierer:** Überdeckt (versteckt) Methoden der Basisklasse. Wird, je nachdem welcher Datentyp das Objekt besitzt, aufgerufen oder nicht.
+* [override:](https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/override) Überschreibt einen Klassenmember der als **virtual** deklariert wurde (erweitert bzw ändert Funktion der Basisklasse). Die zuletzt überschriebene Methode wird immer benutzt!
 
-* **sealed:** Eine als sealed deklarierte Klasse erlaubt keine Ableitung. z.B. verhindert in einer API.
+* [sealed:](https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/sealed) Eine als sealed deklarierte Klasse erlaubt keine Ableitung.
 
-* **abstract:** Damit kann angegeben werden dass die Klasse nur als Basisklasse verwendet werden kann (es darf keine Instanz erstellt werden). Klassen die von einer abstrakten Klasse erben müssen alle Klassenmember die abstract sind implementieren. Haben keine Implementierung von Code sondern nur die Definition!
-
-Note: **VS** Vererbung virtual
-
-New Modifizierer: Zeigt an das der Member neu deklariert und in der Basisklasse verborgen wird.
+Note: In **VS** zeigen.
+Zeigen: Beispiel 33_Vererbung virtual override
 
 ÜBUNG Versandhandel. Davor wdh von Klassen + Vererbung + Properties

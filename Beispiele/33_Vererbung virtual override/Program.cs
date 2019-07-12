@@ -35,8 +35,8 @@ namespace Vererbung_virtual_override {
         // nur in den vererbenden Klassen verfügbar nicht von außerhalb
         protected int alter;
 
-        // Muss in der Kindklasse definiert werden
-        public abstract string GetString();
+        // Muss in den Kindklassen definiert werden
+        public abstract string GetId();
 
         public Lebewesen() 
         {
@@ -45,7 +45,6 @@ namespace Vererbung_virtual_override {
 
         public int GetAlter()
         {
-            Console.WriteLine($"GetAlter Lebewesen {GetString()}");
             return alter;
         }
 
@@ -59,14 +58,6 @@ namespace Vererbung_virtual_override {
 
     sealed class Tier : Lebewesen
     {
-        // Methode der Basisklasse wird überdeckt
-        // Je nach Datentyp wird diese oder die Methode der Basisklasse aufgerufen
-        public new int GetAlter()
-        {
-            Console.WriteLine("GetAlter Tier (überdeckt)");
-            return alter;
-        }
-
         // Methode der Basisklasse wird überschrieben
         public override void Output()
         {
@@ -76,17 +67,20 @@ namespace Vererbung_virtual_override {
         }
 
         // Muss implementiert werden, da dies in der Baisklasse mit "abstract" vorgegeben wurde
-        public override string GetString()
+        public override string GetId()
         {
-            return "1234";
+            Random r = new Random();
+            var x = r.Next(0, 100);
+            return "Tier-" + x;
         }
     }
 
+
     class Mensch : Lebewesen
     {
-        public override string GetString()
+        public override string GetId()
         {
-            return "123";
+            return "Mensch-123";
         }
     }
 }

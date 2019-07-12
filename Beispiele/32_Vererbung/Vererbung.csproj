@@ -41,10 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Lebewesen.cs" />
+    <Compile Include="Mitarbeiter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tier.cs" />
+    <Compile Include="Leiharbeiter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

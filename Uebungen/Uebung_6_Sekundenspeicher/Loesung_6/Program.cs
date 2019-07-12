@@ -41,7 +41,7 @@ namespace Uebung_Sekundenspeicher
 
             Console.WriteLine("\nErweitert:");
             Console.WriteLine($"Tage: {tage} Stunden: {stunden} Minuten: {minuten} Sekunden: {sek}");
-
+            
             Console.WriteLine("\nTaste drücken um zu beenden...");
             Console.ReadKey();
         }
