@@ -51,6 +51,17 @@ Zeigen in **VS**
 
 
 <!-- .slide: class="left" -->
+## Namensräume
+
+* Klassen und Methoden können in sogenannten Namensräumen (engl. Namespaces) hierarchisch geordnet werden.
+
+* Damit auf Klassen eines [Namensraums](https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/namespaces/using-namespaces) zugegriffen werden kann, muss ein Verweis auf den Namensraum bestehen (siehe Projektmappenexplorer).
+
+* Ein Namespace wird mit `using` eingebunden
+
+![Namespace](images/Namespace.png)
+
+<!-- .slide: class="left" -->
 ## Codekonventionen
 
 * Generell sind nur Buchstaben erlaubt, keine Zahlen oder Sonderzeichen.

@@ -188,4 +188,5 @@ foreach (KeyValuePair<string, string> pair in dictionary) {
 
 Note: Gibt noch weitere wie z.B. HashSet, Queue, SortedList, Stack, ..
 
-**VS** Collections
+**VS** In VS z.B. List Verwendung zeigen mit Zuweisung von Objekten und Objekten mit Vererbung.
+ÜBUNG Wetterstation
