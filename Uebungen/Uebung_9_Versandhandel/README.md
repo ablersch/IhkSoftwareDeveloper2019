@@ -1,4 +1,4 @@
-# Übung 9 - Versandhandel
+ Übung 9 - Versandhandel
 
 Für das Beispiel Versandhandel soll folgende Annahme getroffen werden:
 
@@ -13,7 +13,7 @@ Die Ware hat Attribute (private), wie:
 
 Auf die Attribute soll nur mit Properties (Eigenschaften) zugegriffen werden können.
 
-Wir schreiben eine Klasse, die den Namen „Artikel“ trägt und die genannten Attribute abbildet. Von dieser Klasse darf keine Instanz erstellt werden dürfen, sondern sie soll nur als **Basisklasse** dienen. Welches Schlüsselwort ist dafür nötig?
+Wir schreiben eine Klasse, die den Namen „Artikel“ trägt und die genannten Attribute abbildet. Von dieser Klasse darf keine Instanz erstellt werden, sondern sie soll nur als **Basisklasse** dienen. Welches Schlüsselwort ist dafür nötig?
 
 Folgende Methode muss von den Kindklassen implementiert und angepasst werden (auch hier ist ein bestimmtes Schlüsselwort notwendig!):
 
@@ -38,7 +38,7 @@ In der `Ausgabe()` sollen alle Eigenschaften von „Buch“ und „Artikel“ au
 ```bash
 Der Titel lautet: Der Herr der Ringe
 Der Author ist: J. R. R. Tolkien
-Der Buch hat: 1344 Seiten
+Das Buch hat: 1344 Seiten
 
 Die Bezeichnung lautet: BUCH-Der Herr der Ringe
 Die Anzahl ist: 4
