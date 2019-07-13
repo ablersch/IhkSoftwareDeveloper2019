@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Medienauswahl_Aufgabe_2.Buecher">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Buecher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Medienauswahl_Aufgabe_2.Medien">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Medienauswahl_Aufgabe_2.Medien.Leihstatus" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Medien.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Medienauswahl_Aufgabe_2.Medien.TypBezeichnung" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Medien.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAEAAKAAAAAAAAAAAAAAAABAAAABAAAA=</HashCode>
+      <FileName>Medien.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Medienauswahl_Aufgabe_2.Program">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Medienauswahl_Aufgabe_2.Videos">
+    <Position X="3" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Videos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

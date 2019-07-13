@@ -20,7 +20,6 @@ namespace Vererbung_virtual_override {
             tierObjekt.Output();
             lebeObjekt.Output();
 
-            // je nach Datentyp wird die überdeckte Methode oder die der Basisklasse aufgerufen
             tierObjekt.GetAlter();
             lebeObjekt.GetAlter();
 

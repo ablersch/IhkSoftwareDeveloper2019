@@ -24,8 +24,8 @@
 #Uebung_7*
 #Loesung_7
 #Uebung_8*
-Loesung_8
-Uebung_9*
+#Loesung_8
+#Uebung_9*
 Loesung_9
 Uebung_10*
 Loesung_10
@@ -47,6 +47,10 @@ Uebung_X2*
 Loesung_X2
 Uebung_X3*
 Loesung_X3
+
+# alte nicht mehr genutzte Uebungen
+old*
+
 
 
 # User-specific files (MonoDevelop/Xamarin Studio)
