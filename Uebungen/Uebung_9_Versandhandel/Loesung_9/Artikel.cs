@@ -14,5 +14,6 @@ namespace Uebung_Versandhandel
         public string Bezeichnung { get; set; }
 
         public int Nummer { get; set; }
+
     }
 }

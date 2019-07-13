@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Uebung_Wetterstation.Program">
+    <Position X="4.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Uebung_Wetterstation.Wetter">
+    <Position X="2.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAEAgAAAAAgAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Wetter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Uebung_Wetterstation.WetterBase">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAABAAAAAAAAAAAIAAAACAAAAAAAAAEAAAI=</HashCode>
+      <FileName>WetterBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
