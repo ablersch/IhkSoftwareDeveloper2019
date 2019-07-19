@@ -16,7 +16,7 @@ Das .Net Framework stellt im `System.IO` Namespace viele Klassen für Dateiopera
   * Prüfung ob Datei existiert
   * Erstelldatum, Letzte Änderung usw.
 
-* Die Klassen [Directory (static)](https://docs.microsoft.com/de-de/dotnet/api/system.io.directory?view=netframework-4.7.2) und [DirectoryInfo](https://docs.microsoft.com/de-de/dotnet/api/system.io.directoryinfo?view=netframework-4.7.2) stellen Methoden bereit um mit Ordner zu arbeiten.
+* Die Klassen [Directory (static)](https://docs.microsoft.com/de-de/dotnet/api/system.io.directory?view=netframework-4.7.2) und [DirectoryInfo](https://docs.microsoft.com/de-de/dotnet/api/system.io.directoryinfo?view=netframework-4.7.2) stellen Methoden bereit um mit Ordnern zu arbeiten.
   * Dateien eines Ordner lesen
   * Prüfung ob Ordner existiert
   * Order erstellen
@@ -84,19 +84,19 @@ Note: Möglichkeit Ressourcen frei zu geben
 <!-- .slide: class="left" -->
 ## using Anweisung
 
-[Using](https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/using-statement) als Anweisung definiert einen Bereich in welchem das in der using Anweisung definierte Objekt Gültigkeit hat. Das deklarierte Objekt
-wird, nachdem der mit using definierte Gültigkeitsbereich verlassen
-wird, automatisch verworfen (**Dispose**).
-Damit wird sichergestellt das dies auch bei einem Ausnahmefehler
-geschieht.
+[Using](https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/using-statement) als Anweisung definiert einen Bereich in welchem das in der using Anweisung definierte Objekt Gültigkeit hat. Das deklarierte Objekt wird, nachdem der mit using definierte Gültigkeitsbereich verlassen wird, automatisch verworfen (**Dispose**). Damit wird sichergestellt das dies auch bei einem Ausnahmefehler geschieht.
 
-* sind File und Font Klassen, die auf Ressourcen zugreifen. Dort kann mit using gearbeitet werden.
+* Nutzen bei Klassen, die auf Ressourcen zugreifen. z.B. 
+
+  * Dateizugriffe
+  * Datenbankabfragen
+  * ...
 
 * Using kann bei allen Klassen die die **IDisposable Schnittstelle** implementieren angewendet werden.
 
 * Das Objekt wird im Kopf der using Anweisung erzeugt (soll nicht außerhalb erzeugt werden, da das Objekt ansonsten noch Gültigkeit hat)
 
-* Fehler müssen nach wie vor abgefangen werden
+* **Fehler müssen nach wie vor abgefangen werden**
 
 
 <!-- .slide: class="left" -->
@@ -146,6 +146,6 @@ try {
 } catch (Exception e) {}
 ```
 
-Note: ÜBUNG Logger und Dateien einlesen
+Note: ÜBUNG Logger, Dateien einlesen und Medienverwaltung Aufgabe 4
 
 Test mit der DLL vom Nebensitzer oder von mir

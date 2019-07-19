@@ -27,7 +27,7 @@ eine stabile und umfassende Fehlerbehandlung.
 
 * **try:** Mit der try-Anweisung wird der unsichere Programmcode, der Programmcode, der möglicherweise zu einem Fehler führen kann, gekapselt.
 
-* **catch:** Dem Try Codeblock werden dann ein oder mehrere catch-Blöcke zur Fehlerbehandlung zugewiesen, die beim Eintreten eines bestimmten Fehlers abgearbeitet werden sollen.
+* **catch:** Dem Try Codeblock werden dann ein oder mehrere catch-Blöcke zur Fehlerbehandlung zugewiesen, die beim eintreten eines bestimmten Fehlers abgearbeitet werden sollen.
 
 * **finally:** In einem abschließenden finally-Block, der in jedem Fall ausgeführt wird (immer), lassen sich Bereinigungsaufgaben durchführen oder Ressourcen freigeben (das Schließen von Dateien).
 
@@ -89,7 +89,7 @@ static void Main(string[] args)
 }
 ```
 
-Note: **VS** Exception
+Note: **VS** Exception herbeirufen (z.B. Verwendung eines null-Objects). Abfangen zeigen
 
 Zeigen: Bedingte Breakpoints
 
@@ -99,6 +99,8 @@ Zeigen: Bedingte Breakpoints
 
 ![image](images/ExceptionUebersicht.png)
 
-Liste über [System-Exceptions](https://www.completecsharptutorial.com/basic/complete-system-exception.php)
+[Liste über System-Exceptions](https://www.completecsharptutorial.com/basic/complete-system-exception.php)
+
+[eigene Exceptions](https://docs.microsoft.com/de-de/dotnet/standard/exceptions/how-to-create-user-defined-exceptions)
 
 Note: Datei Fehler z.B. in System.IO Namespace

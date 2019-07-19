@@ -29,25 +29,25 @@ zahl = (int)d; explizit (auch mit Convert möglich)
 ## Beispiel
 
 ```csharp
-Person person;
+Person hans;
 Object myObject = new Person();
 if (myObject is Person) // Prüft ob myObject mit Person kompatibel ist
 {
-    person = (Person)myObject; // Alternativ:  ((Person)myObject).GetName();
-    person.GetName();
+    hans = (Person)myObject; // Alternativ:  ((Person)myObject).GetName();
+    hans.GetName();
 }
 
 ```
 
 ```csharp
-person = myObject as Person; // Führt eine Konvertierung aus
-if (person != null) // Erfolgreich wenn person nicht null ist
+hans = myObject as Person; // Führt eine Konvertierung aus
+if (hans != null) // Erfolgreich wenn person nicht null ist
 {
-    person.GetName();
+    hans.GetName();
 }
 ```
 
-Note: **VS** Casting, Collections2, Static
+Note: **VS** Casting, und Static zeigen. Casting machen in VS.
 
 ÜBUNG Medienverwaltung 3
 

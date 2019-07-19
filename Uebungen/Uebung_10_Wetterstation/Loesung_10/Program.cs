@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace Uebung_Wetterstation {
@@ -6,7 +7,7 @@ namespace Uebung_Wetterstation {
     class Program {
         static void Main(string[] args) 
         {         
-            var station = new List<Wetter>();            
+            var station = new List<Wetter>();
 
             station.Add(new Wetter("Station Scott", -55, -2, 800, 0)); // Objekt instanziieren
             station.Add(new Wetter("Station Tunis", 115, 30, 1030, 0));

@@ -1,13 +1,11 @@
 ﻿
 namespace Uebung_Wetterstation
 {
-
     class WetterBase {
         // Temperatur: - 40 bis + 80 Grad Celsius
         private int temperatur = 0;
         // Luftfeuchtigkeit: 0 bis 100 Prozent
         private int luftfeuchtigkeit = 0;
-
 
         public string StationsName { get; set; } = "";
 
