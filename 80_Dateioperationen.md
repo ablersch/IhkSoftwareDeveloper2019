@@ -10,13 +10,13 @@ Das .Net Framework stellt im `System.IO` Namespace viele Klassen für Dateiopera
 
 * Klassen [StreamReader](https://docs.microsoft.com/de-de/dotnet/api/system.io.streamreader?view=netframework-4.7.2) und [StreamWriter](https://docs.microsoft.com/de-de/dotnet/api/system.io.streamwriter?view=netframework-4.7.2) um Text aus Dateien zu lesen bzw. zu schreiben.
 
-* Klassen [File (static)](https://docs.microsoft.com/de-de/dotnet/api/system.io.file?view=netframework-4.7.2) und [FileInfo](https://docs.microsoft.com/de-de/dotnet/api/system.io.fileinfo?view=netframework-4.7.2) um einfache Prüfungen durchzuführen und Dateiinfos anzeigen zu lassen. Werden viele solcher Operationen durchgeführt ist FileInfo zu bevorzugen (nur ein Security Check).
+* Klassen [File (static)](https://docs.microsoft.com/de-de/dotnet/api/system.io.file?view=netframework-4.7.2) und [FileInfo](https://docs.microsoft.com/de-de/dotnet/api/system.io.fileinfo?view=netframework-4.7.2) um Dateiinfos anzeigen zu lassen. Werden viele solcher Operationen durchgeführt ist FileInfo zu bevorzugen.
 
   * Dateigröße ermitteln
   * Prüfung ob Datei existiert
   * Erstelldatum, Letzte Änderung usw.
 
-* Die Klassen [Directory (static)](https://docs.microsoft.com/de-de/dotnet/api/system.io.directory?view=netframework-4.7.2) und [DirectoryInfo](https://docs.microsoft.com/de-de/dotnet/api/system.io.directoryinfo?view=netframework-4.7.2) stellen Methoden bereit um mit Ordnern zu arbeiten.
+* Die Klassen [Directory (static)](https://docs.microsoft.com/de-de/dotnet/api/system.io.directory?view=netframework-4.7.2) und [DirectoryInfo](https://docs.microsoft.com/de-de/dotnet/api/system.io.directoryinfo?view=netframework-4.7.2) um mit Ordnern zu arbeiten.
   * Dateien eines Ordner lesen
   * Prüfung ob Ordner existiert
   * Order erstellen
