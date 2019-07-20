@@ -22,7 +22,7 @@ namespace Medienauswahl_Aufgabe_3
         /// Prüfen ob die ID/Key eindeutig ist
         /// </summary>
         /// <param name="key">Zu prüfende ID</param>
-        /// <returns>true = id erlaubt  ;  false = id nicht erlaubt</returns>
+        /// <returns>true = id erlaubt; false = id nicht erlaubt</returns>
         internal static bool IsKeyEindeutig(int key)
         {
             if (medienDic.ContainsKey(key))
