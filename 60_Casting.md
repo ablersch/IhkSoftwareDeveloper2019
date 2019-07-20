@@ -47,7 +47,7 @@ if (hans != null) // Erfolgreich wenn person nicht null ist
 }
 ```
 
-Note: **VS** Casting, und Static zeigen. Casting machen in VS.
+Note: **VS** Casting, und Static (z.B. Methode zum prüfen ob Email Adresse) zeigen. Casting machen in VS.
 
 ÜBUNG Medienverwaltung 3
 

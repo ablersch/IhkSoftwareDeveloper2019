@@ -99,8 +99,6 @@ Zeigen: Bedingte Breakpoints
 
 ![image](images/ExceptionUebersicht.png)
 
-[Liste über System-Exceptions](https://www.completecsharptutorial.com/basic/complete-system-exception.php)
-
-[eigene Exceptions](https://docs.microsoft.com/de-de/dotnet/standard/exceptions/how-to-create-user-defined-exceptions)
+[Liste über System-Exceptions](https://www.completecsharptutorial.com/basic/complete-system-exception.php) und [eigene Exceptions](https://docs.microsoft.com/de-de/dotnet/standard/exceptions/how-to-create-user-defined-exceptions)
 
 Note: Datei Fehler z.B. in System.IO Namespace

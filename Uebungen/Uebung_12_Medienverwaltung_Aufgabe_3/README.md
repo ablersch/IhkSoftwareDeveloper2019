@@ -3,6 +3,7 @@
 # Teil 1
 
 ## Objekte speichern
+
 Nun können mehrere Objekte einer Klasse existieren. Z.b. 2 Video und 3 Bücher Objekte. Der Bestand der Bibliothek soll in einer „Collection“ temporär (nur zur Laufzeit des Programms) gespeichert werden.
 
 **Die Collection beinhaltet alle Objekte.**
@@ -17,6 +18,8 @@ int signatur = random.Next(Zahlen von, Zahlen bis);
 ```
 
 Prüfen Sie ob eine Signatur bereits existiert. Wenn ja eine neue Zufallszahl generieren.
+
+Ebenfalls soll beim Entleihen und Rückgeben geprüft werden ob die eingegebene Signatur überhaupt existiert.
 
 ## zusätzliche Kommandos
 

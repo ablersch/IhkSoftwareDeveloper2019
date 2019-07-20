@@ -28,7 +28,7 @@ namespace Dateioperationen
             StreamWriter writer2 = fileInfo.AppendText();
             writer2.WriteLine("### Schreibe Text in die LogDatei ###");
             writer2.WriteLine("### Schreibe Text in die LogDatei  2###");
-            writer2.Dispose();
+            writer2.Close();
 
             // Prüfen ob Datei existiert
             if (!File.Exists(logFilePath))
