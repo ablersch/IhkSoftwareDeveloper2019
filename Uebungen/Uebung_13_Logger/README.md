@@ -12,7 +12,7 @@ Erstellen Sie wie gewohnt ein Konsolenprojekt und nutzen Sie die Main Methode zu
 
 Erstellen Sie mindestens zwei Methoden:
 
-* Mit der ersten Methode übergeben Sie den Pfad zu der Stelle an der die Logdatei gespeichert werden soll und den Namen der Datei. Es soll der Ordner und die Datei angelegt werden, wenn diese nicht existieren.
+* Mit der ersten Methode übergeben Sie den Pfad zu der Stelle an der die Logdatei gespeichert werden soll und den Namen der Datei. Wenn der Ordner  nicht existieren diesen anlegen.
 
 * Mit der zweiten Methode schreiben Sie in die Logdatei.
 

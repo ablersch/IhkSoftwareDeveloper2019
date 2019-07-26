@@ -86,14 +86,16 @@ namespace Medienauswahl_Aufgabe_3_Teil_1
                         tempMedien = GetElement(signatur);
                         if (tempMedien != null)
                         {
-                            if (tempMedien is Buecher)
-                            {
-                                (tempMedien as Buecher).Rueckgabe(signatur);
-                            }
-                            else if (tempMedien is Videos)
-                            {
-                                (tempMedien as Videos).Rueckgabe(signatur);
-                            }
+                            tempMedien.Rueckgabe(signatur);
+
+                            //if (tempMedien is Buecher)
+                            //{
+                            //    (tempMedien as Buecher).Rueckgabe(signatur);
+                            //}
+                            //else if (tempMedien is Videos)
+                            //{
+                            //    (tempMedien as Videos).Rueckgabe(signatur);
+                            //}
                         }
                         break;
 
@@ -126,11 +128,11 @@ namespace Medienauswahl_Aufgabe_3_Teil_1
         /// <returns>Medien Objekt; Bei Fehler null</returns>
         static Medien GetElement(int key)
         {
-            if (key == 0)
-            {
-                Console.WriteLine("Keine gültige Signatur eingegeben");
-                return null;
-            }
+            //if (key == 0)
+            //{
+            //    Console.WriteLine("Keine gültige Signatur eingegeben");
+            //    return null;
+            //}
 
             if (medienDic.ContainsKey(key))
             {
