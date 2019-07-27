@@ -2,15 +2,21 @@
 
 Es sollen bestehende Logdateien (bzw. Textdateien) in einer Konsolenanwendung eingelesen bzw. ausgegeben werden.
 
-Die auszugebenden Dateien sollen als Parameter der Anwendung übergeben werden. D.h. der Pfad soll nicht im Programm eingegeben werden. Es können auch mehrere Dateien übergeben werden. Nutzen sie hierzu das „string[] args Array“ der Main Methode.
+Die auszugebenden Dateien sollen als Parameter (vollständiger Pfad) der Anwendung übergeben werden. D.h. der Pfad soll nicht im Programm eingegeben werden. Es können auch mehrere Dateien übergeben werden. Nutzen Sie hierzu das _string[] args Array_ der Main Methode.
+
+D.h. das Programm kann wie folgt gestartet werden:
+
+```bash
+meinProgramm.exe c:\temp\test.txt c:\temp\error.log
+```
 
 ## Folgende Funktionen sollen implementiert werden
 
 * Prüfen Sie ob die Datei existiert
-* Es sollen nur Textdateien akzeptiert werden (z.B. log und txt). Ist die übergebene Datei nicht gültig soll eine Meldung erscheinen und das Programm mit der nächsten Datei weiterarbeiten.
+* Es sollen nur Textdateien akzeptiert werden (z.B. log und txt). Wird die übergebene Datei nicht unterstützt  soll eine Meldung erscheinen und das Programm mit der nächsten Datei weiterarbeiten.
 * Am Anfang vor jeder Dateiausgabe eine Art Dateiinfo ausgeben
 
-    * Größe in KB,
+    * Größe in KB
     * Erstelldatum (nur Datum)
     * letzte Bearbeitung
 
@@ -25,6 +31,6 @@ Die auszugebenden Dateien sollen als Parameter der Anwendung übergeben werden. 
 
 ## Hinweis
 
-Um solch ein Projekt einfach zu debuggen gibt es die Möglichkeit dem Debugger Übergabeparameter mitzugeben.
+Um solch ein Projekt einfach zu debuggen gibt es die Möglichkeit dem Debugger Befehlszeilenargumente mitzugeben.
 
 ![Debug Parameter](DebugParameter.png)
