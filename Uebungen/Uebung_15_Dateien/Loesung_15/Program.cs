@@ -6,7 +6,7 @@ namespace Uebung_Dateien_ausgeben
     class Program
     {
         static void Main(string[] args)
-        {   
+        {
             // Prüfen ob Befehlszeilenargumente vorhanden sind
             if (args.Length > 0)
             {
@@ -40,7 +40,11 @@ namespace Uebung_Dateien_ausgeben
                     }
                 }
             }
-            Console.WriteLine("Kein Parmeter mitgegeben");
+            else
+            {
+                Console.WriteLine("Kein Parameter mitgegeben");
+            }
+            Console.WriteLine("\nZum beenden Taste drücken");
             Console.ReadLine();
         }
 
@@ -48,10 +52,11 @@ namespace Uebung_Dateien_ausgeben
         {
             FileInfo fileInfo = new FileInfo(pfad);
 
-            // Damit keine Komastelle verloren geht
+            // Damit keine Kommastelle verloren geht
             float lengthInKb = fileInfo.Length / 1024f;
 
-            Console.WriteLine("\nDatei: " + pfad);
+            Console.WriteLine("\n---------------");
+            Console.WriteLine($"Datei: {pfad}");
             Console.WriteLine($"Größe [KB]: {lengthInKb} Erstelldatum: {fileInfo.CreationTime.ToShortDateString()} letzte Änderung: {fileInfo.LastWriteTime}");
             Console.WriteLine();
 
@@ -66,24 +71,22 @@ namespace Uebung_Dateien_ausgeben
                         if (line.Contains("ERROR"))
                         {
                             Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine(line);
                         }
                         else if (line.Contains("WARNING"))
                         {
                             Console.ForegroundColor = ConsoleColor.Yellow;
-                            Console.WriteLine(line);
                         }
                         else if (line.Contains("HIGH"))
                         {
                             Console.ForegroundColor = ConsoleColor.White;
-                            Console.WriteLine(line);
                         }
                         else
                         {
                             // Normal, ohne Farbe ausgeben
                             Console.ResetColor();
-                            Console.WriteLine(line);
                         }
+
+                        Console.WriteLine(line);
                     }
                 }
                 Console.ResetColor();
