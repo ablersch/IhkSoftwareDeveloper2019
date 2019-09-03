@@ -130,9 +130,9 @@ Punktoperator.
 meinePerson.alter = 20;
 ```
 
-Note: **VS** Klasse erzeugen und nutzen. IN **VS** zeigen, Sichtbarkeit von Variablen (Klassenvariable, Variable in Methode, in Schleife)
+Note: **VS** Klasse erzeugen und nutzen. In **VS** zeigen, Sichtbarkeit von Variablen (Klassenvariable, Variable in Methode, in Schleife) als Wdh
 
-ÜBUNG Medienverwaltung 1
+ÜBUNG Medienverwaltung 2
 
 
 <!-- .slide: class="left" -->
@@ -162,8 +162,7 @@ Methoden sind meist nach außen sichtbar und greifen auf die geschützten Variab
 <!-- .slide: class="left" -->
 ## Eigenschaften
 
-Um die Kapselung zu erreichen werden die Attribute **private**
-deklariert. Der Zugriff erfolgt über eine [Property (Eigenschaft)](https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/classes-and-structs/properties).
+Um die Kapselung zu erreichen werden die Attribute **private** deklariert. Der Zugriff erfolgt über eine [Property (Eigenschaft)](https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/classes-and-structs/properties).
 
 ```csharp
 public class Person
@@ -387,7 +386,7 @@ namespace BeispielKonstruktor
     {
         private int aktuelleGeschwindigkeit;
 
-        public int Geschwindigkeit // Property
+        public int Geschwindigkeit // Property/Eigenschaft
         {
             get { return this.aktuelleGeschwindigkeit; }
             set { this.aktuelleGeschwindigkeit = value; }
@@ -398,7 +397,7 @@ namespace BeispielKonstruktor
             Geschwindigkeit = wert;
         }
 
-        public Fahrzeug() : this(50) //Verweis auf Konstruktor mit einem Paramter
+        public Fahrzeug() : this(0) //Verweis auf Konstruktor mit einem Parameter
         {
         }
     }
@@ -418,7 +417,7 @@ namespace BeispielKonstruktor
 
 Note: Anderer überladener Konstruktor wird zuerst mit this aufgerufen. Danach wird der restliche Code durchlaufen.
 
-Initialisierungscode sollte in nur einem Konstrukt sein der von anderen aufgerufen wird.
+Initialisierungscode sollte in nur einem Konstruktor sein der von anderen aufgerufen wird.
 
 **VS** Konstruktor zeigen (Klasse erstellen mit zwei Konstruktoren. Der  Konstruktor mit einem Wert ruft anderen Konstruktor mit zwei Werten auf)
 
@@ -578,7 +577,7 @@ In **VS** zeigen:
 * Aufruf der Methoden
 * Aufruf Konstruktor
 
-ÜBUNG Medienverwaltung 2
+ÜBUNG Medienverwaltung 3
 
 
 <!-- .slide: class="left" -->
@@ -595,4 +594,4 @@ In **VS** zeigen:
 Note: In **VS** zeigen.
 Zeigen: Beispiel 33_Vererbung virtual override
 
-ÜBUNG Versandhandel. Davor wdh von Klassen + Vererbung + Properties
+ÜBUNG Flugzeug

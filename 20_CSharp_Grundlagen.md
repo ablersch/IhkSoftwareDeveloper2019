@@ -240,14 +240,14 @@ Namespace System. Sie lauten:
 | `ReadLine()` | Liest eine Zeile als **string** von der Konsole.
 | `Write()`    | Gibt einen String auf der Konsole ohne Zeilenumbruch aus.
 | `WriteLine()`| Entspricht Write() nur mit Zeilenumbruch.
-| `ReadKey()`  | Liest ein eingegebenes Zeichen als `ConsoleKeyInfo`
+| `ReadKey()`  | Liest ein eingegebenes Zeichen als `ConsoleKeyInfo`.
 
 Es gibt mehrere Möglichkeiten, um eine bestimmte Ausgabe zu erzeugen.
 
 **Beispiel:** Es soll die Ausgabe *"Die Summe von 1500 plus 500 ist
 2000"* erzeugt werden.
 
-Note: cw (if, for, ...) + tab + Tab in **VS** zeigen Daten von Console lesen
+Note: cw (if, for, ...) + tab + Tab in **VS** zeigen Daten von Console lesen. ConsoleKeyInfo zeigen.
 
 
 <!-- .slide: class="left" -->
@@ -446,12 +446,25 @@ class Program
         {
             Console.WriteLine("True");
         }
-        Console.WriteLine($"Der Status Code ist {eStatus} mit dem Wert {eStatus.GetHashCode()}"); // oder (int)eStatus)
-         }
-     }
+        Console.WriteLine($"Der Status Code ist {eStatus} mit dem Wert {(int)eStatus}");
+        }
+    }
+}
 ```
 
 Note: **VS** Enum
+
+
+<!-- .slide: class="left" -->
+## Enum Übung
+
+Erstellen Sie ein kleines Konsolenprogramm wo ein Level (Werte 1-3) für eine Person abgefragt wird. Dieser Wert soll in einer Enum Variable gespeichert werden. Danach die Bezeichnung des zugehörigen Enum Wertes ausgeben.
+
+Enum Werte:
+
+* 1 = Beginner
+* 2 = Advanced
+* 3 = Master
 
 
 <!-- .slide: class="left" -->
@@ -629,29 +642,30 @@ Mehr zum Thema [Sprunganweisungen](https://docs.microsoft.com/de-de/dotnet/cshar
 
 
 <!-- .slide: class="left" -->
-# Gültigkeitsbereich von Variablen
+## Gültigkeitsbereich von Variablen
 
 **Eine Variable steht immer nur innerhalb ihres Geltungsbereichs zur Verfügung.**
 
-* keine globalen Variabeln
+* keine globalen Variablen
 * innerhalb einer Klasse
 * innerhalb einer Methode. z.B. die übergebenen Argumente, aber auch für andere Zwischenwerte, die nur in dieser Methode benötigt werden.
 * innerhalb eines Blocks. z.B. Laufvariablen in for- und foreach-Schleifen oder auch eine Variable innerhalb eines if-Zweigs.
 
-Außerhalb dieses Bereichs steht eine Variable nicht zur Verfügung: Sie ist dort unbekannt; ihr Wert kann nicht genutzt werden.
+Außerhalb dieses Bereichs steht eine Variable nicht zur Verfügung: Sie ist dort unbekannt (Ihr Wert kann nicht genutzt werden).
 
 
 <!-- .slide: class="left" -->
-## Deklaration von Variabeln
+### Deklaration von Variablen
+
 Das führt zur Frage, wo eine Variable deklariert werden sollte. Dafür gilt vorrangig die Frage der Lesbarkeit:
 
 * Eine Variable, die nur innerhalb eines winzigen Code-Teils benötigt wird, sollte dort deklariert werden.
 
-* Eine Variable, die als var deklariert wird, kann erst dort deklariert werden, wo sie (erstmals) einen Wert zugewiesen bekommt.
+* Eine Variable, die als **var** deklariert wird, kann erst dort deklariert werden, wo sie (erstmals) einen Wert zugewiesen bekommt.
 
 * Andere lokale Variable sollten möglichst zusammenhängend am Anfang eines Code-Teils deklariert werden.
 
 * Auch Klassenvariable sollten innerhalb der Klasse an einer sinnvollen Stelle stehen.
 
 Note: **VS** Sichtbarkeit von Variablen zeigen (Klasse, Methode, If, ...).
-ÜBUNG Fakultät und Palindrom (wdh von C)
+ÜBUNG Fakultät, Palindrom (wdh von C), Passwort und Medienverwaltung 1

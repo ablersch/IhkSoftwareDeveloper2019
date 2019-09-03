@@ -23,7 +23,7 @@ Code formatieren: Bearbeiten &rarr; Erweitert &rarr; Dokument formatieren
 * F7 von GUI in die Code-Bind Datei springen
 * F9 Breakpoint setzen/entfernen
 * F12 Gehe zur Definition
-* Strg + Mausrad drehen Code vergrößern
+* Strg + Mausrad drehen Code vergrößernMarkdown Preview
 
 
 <!-- .slide: class="left" -->

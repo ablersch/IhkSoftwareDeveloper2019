@@ -49,6 +49,6 @@ if (hans != null) // Erfolgreich wenn person nicht null ist
 
 Note: **VS** Casting, und Static (z.B. Methode zum prüfen ob Email Adresse) zeigen. Casting machen in VS.
 
-ÜBUNG Medienverwaltung 3
+ÜBUNG Medienverwaltung 4
 
 Erklärung zu statisch
