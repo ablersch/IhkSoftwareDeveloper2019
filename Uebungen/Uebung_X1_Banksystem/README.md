@@ -1,6 +1,6 @@
 # Banksystem
 
-Programmiere ein kleines Banksystem welches für einen Inhaber mehrere Konten verwalten kann.
+Programmieren Sie zur Wiederholung der Themen aus dem Modul II ein kleines Banksystem welches für einen Inhaber mehrere Konten verwalten kann. Bei der Umsetzung wie gelernt Klassen und Methoden einsetzen.
 
 ## Folgende Funktionen sollen möglich sein
 
@@ -11,13 +11,13 @@ Programmiere ein kleines Banksystem welches für einen Inhaber mehrere Konten ve
 
 Konten sollen einen Inhaber samt Namen und Alter, einen Kontostand, ein Kreditlimit, eine laufende Kreditsumme und das Realgeld besitzen (Realgeld entspricht Kontostand abzüglich des durch Kredit vorhandenen Geldes).
 
-Nicht alle Konten dürfen einen Kredit besitzen (erst wenn der Inhaber 18 Jahr alt ist)
+Nicht alle Konten dürfen ein Kreditlimit (Kredit) besitzen. Erst wenn der Inhaber 18 Jahr alt ist.
 
 ## Auswahlmöglichkeiten
 
-Sollen per Texteingabe auswählbar sein und bei Auswahl vertiefende Fragen stellen z.B. bei bearbeiten eines Kontos "Welches Konto", dann noch tiefer "Welche Eigenschaft", "Welcher Wert".
+Die Auswahlmöglichkeiten sollen per Texteingabe auswählbar sein und bei Auswahl vertiefende Fragen stellen z.B. bei bearbeiten eines Kontos "Welches Konto", dann noch tiefer "Welche Eigenschaft", "Welcher Wert".
 
-Die Anwendung soll dann wieder zum Ursprung springen und die selben Möglichkeiten bieten --> Solange, bis der Benutzer das Programm durch einen bestimmten Text oder ein  Zeichen beendet
+Die Anwendung soll dann wieder zum Ursprung springen und die selben Möglichkeiten bieten. Solange, bis der Benutzer das Programm durch einen bestimmten Text oder ein Zeichen beendet.
 
 ## Beachten
 
@@ -26,6 +26,5 @@ Die Anwendung soll dann wieder zum Ursprung springen und die selben Möglichkeit
 
 ## Erweiterungen
 
-* Bereits eingegeben Inhaber können aus einer Liste beim erstellen eines neuen Kontos ausgewählt werden
-
+* Bereits eingegeben Inhaber können aus einer Liste beim erstellen eines neuen Kontos ausgewählt werden.
 * Es können Konten mit verschiedenen Währungen bestehen. Beachtet die Umrechnung in andere Währungen.
