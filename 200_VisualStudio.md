@@ -60,11 +60,11 @@ Extras &rarr; Einstellungen importieren/exportieren &rarr; Ausgewählte Umgebung
 
 Fehlende Using Verweise automatisch aufnehmen
 
-![Using](images/using.png)
+![Using](images/Using.png)
 
 Oder über Smarttag
 
-![Using](images/using2.png)
+![Using](images/Using2.png)
 
 
 <!-- .slide: class="left" -->
